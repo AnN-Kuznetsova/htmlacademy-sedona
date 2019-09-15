@@ -7,14 +7,14 @@
   <body>
     <!--Шапка-->
     <header>
-      <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сайта «Седона»">
+      <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сайта «Седона».">
 
       <nav>
         <ul>
           <li><a href="">Информация</a></li>
           <li><a href="">Фото и видео</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
-          <li><a href="">Карта штата</a></li>
+          <li><a href="#map-of-arizona">Карта штата</a></li>
         </ul>
       </nav>
     </header>
@@ -22,7 +22,7 @@
     <main>
       <!--Седона: приветствие-->
       <section>
-        <h1>Sedona</h1>
+        <h1 class="visually-hidden">Sedona</h1>
         <!--
           <p>Welcome <span>to the gorgeous</span></p>
           <p>"Because the Grand Canyon sucks!"</p>
@@ -41,14 +41,14 @@
               <h3>Настоящий городок</h3>
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
-            <img src="img/photo-town.jpg" width="800" height="256" alt="Фотография городка">
+            <img src="img/photo-town.jpg" width="800" height="256" alt="Фотография городка.">
           </li>
           <li>
             <div>
               <h3>Там есть<br> Мост дьявола</h3>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
-            <img src="img/photo-bridge-devil.jpg" width="800" height="256" alt="Фотография Моста дьявола">
+            <img src="img/photo-bridge-devil.jpg" width="800" height="256" alt="Фотография Моста дьявола.">
           </li>
           <li>
             <div>
@@ -73,7 +73,7 @@
 
       <!--Особенности-->
       <section>
-        <h2>Особенности Седоны</h2>
+        <h2 class="visually-hidden">Особенности Седоны</h2>
 
         <ul>
           <li>
@@ -107,15 +107,32 @@
       <!--Окно поиска гостиницы-->
       <section>
         <h3>Поиск гостиницы в Седоне</h3>
-        <!--Здесь будет форма поиска гостиницы-->
-        <button type="button">Найти</button>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <p>
+            <label for="arrival-date">Дата заезда</label>
+            <input id="arrival-date" type="date" name="arrival-date" value="" placeholder="24 апреля 2017">
+          </p>
+          <p>
+            <label for="date-of-departure">Дата выезда</label>
+            <input id="date-of-departure" type="date" name="date-of-departure" value="" placeholder="4 июля 2017">
+          </p>
+          <p>
+            <label for="adults-count">Взрослые</label>
+            <input id="adults-count" type="number" name="adults-count" value="" placeholder="2" min="0">
+          </p>
+          <p>
+            <label for="children-count">Дети</label>
+            <input id="children-count" type="number" name="children-count" value="" placeholder="0" min="0">
+          </p>
+          <button type="submit">Найти</button>
+        </form>
       </section>
 
       <!--Карта штата-->
-      <section>
-        <h2>Карта штата</h2>
-        <img src="img/map.png" width="1200" height="593" alt="Карта штата">
-        <!--Здесь будет интерактивная карта-->
+      <section id="map-of-arizona">
+        <h2 class="visually-hidden">Карта штата</h2>
+        <img src="img/map.png" width="1200" height="593" alt="Карта штата Аризона, США.">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d567185.0505102321!2d-112.21552183115146!3d34.908580631572256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1568539149547!5m2!1sru!2sru" width="100%" height="593" frameborder="0" style="border:0;" allowfullscreen="">Интерактивная карта штата Аризона, США.</iframe>
       </section>
     </main>
 
@@ -124,12 +141,12 @@
       <p>#visitSEDONA</p>
 
       <div>
-        <a href="">Твиттер</a>
-        <a href="">Фейсбук</a>
-        <a href="">Ютуб</a>
+        <a href=""><span  class="visually-hidden">Седона в Твиттере</span></a>
+        <a href=""><span  class="visually-hidden">Седона в Фейсбуке</span></a>
+        <a href=""><span  class="visually-hidden">Седона на Ютубе</span></a>
       </div>
 
-      <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a></p>
+      <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><span  class="visually-hidden">HTML Academy</span></a></p>
     </footer>
 
   </body>
