@@ -15,65 +15,123 @@
         <ul>
           <li><a href="">Информация</a></li>
           <li><a href="">Фото и видео</a></li>
-          <li><a>Гостиницы</a></li>
           <li><a href="index.html#map-of-arizona">Карта штата</a></li>
+          <li><a>Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h2>Поиск гостиницы в Седоне</h2>
+      <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
 
       <!--Фильтр-->
       <section>
-        <h3>Фильтр для поиска гостиницы</h3>
+        <h3 class="visually-hidden">Фильтр для поиска гостиницы</h3>
 
-        <!--Здесь будет НАЧАЛО формы для фильтра-->
-          <div>
-            <p>Инфраструктура:</p>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          
+          <fieldset>
+            <legend>Инфраструктура:</legend>
             <ul>
-              <!--Группа чекбоксов-->
+              <li>
+                <input class="visually-hidden" id="filter-pool" type="checkbox" name="pool" checked>
+                <label for="filter-pool">Бассейн</label>
+              </li>
+              <li>
+                <input class="visually-hidden" id="filter-parking" type="checkbox" name="parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li>
+                <input class="visually-hidden" id="filter-wifi" type="checkbox" name="wifi">
+                <label for="filter-wifi">Wi-Fi</label>
+              </li>
             </ul>
-          </div>
-          <div>
-            <p>Тип жилья:</p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Тип жилья:</legend>
             <ul>
-              <!--Группа чекбоксов-->
+              <li>
+                <input class="visually-hidden" id="filter-hotel" type="checkbox" name="hotel" checked>
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li>
+                <input class="visually-hidden" id="filter-motel" type="checkbox" name="motel" checked>
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li>
+                <input class="visually-hidden" id="filter-apartments" type="checkbox" name="apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
+              </li>
             </ul>
-          </div>
+          </fieldset>
+          
           <div>
-            <table>
-              <caption>Стоимость в сутки (р):</caption>
-              <tr>
-                <td>От 0</td>
-                <td>До 3000</td>
-              </tr>
-            </table>
+            <fieldset>
+              <legend>Стоимость в сутки (р):</legend>
+              <table>
+                <tr>
+                  <td>От 0</td>
+                  <td>До 3000</td>
+                </tr>
+              </table>
+
+              <!-- Слайдер -->
+              <div>
+                <label class="visually-hidden" for="filter-cost-min">Выберите минимальную стоимость жилья в сутки в рублях:</label>
+                <input id="filter-cost-min" type="range" name="cost-min" min="0" max="3000" step="100" value="0">    
+                <label class="visually-hidden" for="filter-cost-max">Выберите максимальную стоимость жилья в сутки в рублях:</label>
+                <input id="filter-cost-max" type="range" name="cost-max" min="0" max="3000" step="100" value="2750">         
+              </div>
+
+            </fieldset>
             <button type="submit">Показать</button>
           </div>
-        <!--Здесь будет КОНЕЦ формы для фильтра-->
+
+        </form>
       </section>
 
       <!--Сортировка-->
       <section>
-        <h3>Фильтры отображения гостиниц</h3>
+        <h3 class="visually-hidden">Фильтры отображения гостиниц</h3>
 
         <p>Найдено: 3</p>
-        <div>
-          <p>Сортировка:</p>
+        <fieldset>
+          <legend>Сортировка:</legend>
           <ul>
-            <!--Группа чекбоксов-->
+            <li>
+              <input class="visually-hidden" id="sorting-price" type="radio" name="sorting-filter" value="price" checked>
+              <label for="sorting-price">По цене</label>
+            </li>
+            <li>
+              <input class="visually-hidden" id="sorting-type" type="radio" name="sorting-filter" value="type">
+              <label for="sorting-type">По типу</label>
+            </li>
+            <li>
+              <input class="visually-hidden" id="sorting-rating" type="radio" name="sorting-filter" value="rating">
+              <label for="sorting-rating">По рейтингу</label>
+            </li>
           </ul>
-        </div>
-        <div>
-          <button type="button">Сортировка по возрастанию</button>
-          <button type="button">Сортировка по убыванию</button>
-        </div>
+        </fieldset>
+        
+        <fieldset>
+          <legend class="visually-hidden">Тип сортировки:</legend>
+          <ul>
+            <li>
+              <input class="visually-hidden" id="sort-ascending" type="radio" name="sorting" value="ascending">
+              <label class="visually-hidden" for="sort-ascending">Сортировка по возрастанию</label>
+            </li>
+            <li>
+              <input class="visually-hidden" id="sort-descending" type="radio" name="sorting" value="descending" checked>
+              <label class="visually-hidden" for="sort-descending">Сортировка по убыванию</label>
+            </li>
+          </ul>
+        </fieldset>
       </section>
 
       <!--Список гостиниц-->
       <section>
-        <h3>Список гостиниц</h3>
+        <h3 class="visually-hidden">Список гостиниц</h3>
 
         <ul>
           <li>
@@ -147,15 +205,15 @@
 
     <!--Подвал-->
     <footer>
-      <p>#visitSEDONA</p>
+        <a href="" target="_blank" aria-label="Седона в Инстаграм">#visitSEDONA</a>
 
       <div>
-        <a href="">Седона в Твиттере</a>
-        <a href="">Седона в Фейсбуке</a>
-        <a href="">Седона на Ютубе</a>
+        <a href="" target="_blank" aria-label="Седона в Твиттере">Седона в Твиттере</a>
+        <a href="" target="_blank" aria-label="Седона в Фейсбуке">Седона в Фейсбуке</a>
+        <a href="" target="_blank" aria-label="Седона на Ютубе">Седона на Ютубе</a>
       </div>
 
-      <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a></p>
+      <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="HTML Academy">HTML Academy</a></p>
     </footer>
 
   </body>
