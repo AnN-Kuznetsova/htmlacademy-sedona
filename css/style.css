@@ -1,0 +1,272 @@
+html {
+  padding-left: 40px;
+  padding-right: 40px;
+
+  background-color: #f2f2f2;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  
+    font-family: "PT Sans", Arial, sans-serif; 
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #000000;
+    text-transform: uppercase;
+  
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font: inherit;
+  font-weight: bold;
+
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  border: none;
+}
+
+.button-blue {
+  background-color: #81b3d2;
+}
+
+.button-blue:hover,
+.button-blue:focus {
+  background-color: #669ec0;
+}
+
+.button-blue:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.button-brown {
+  background-color: #766357;
+}
+
+.button-brown:hover,
+.button-brown:focus {
+  background-color: #604e43;
+}
+
+.button-brown:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+  .main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+
+  text-align: center; 
+}
+
+.main-navigation ul {
+  list-style: none;
+}
+
+.main-navigation a {
+  color: #000000;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: #81b3d2;
+}
+
+.main-navigation a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.main-navigation .active {
+    color: #766357;
+}
+
+.greetings {
+  text-align: center;
+  vertical-align: middle;
+} 
+
+.welcome {
+  min-height: 510px;
+
+  background-color: #687781;
+  background-image: 
+  url("../img/polygon.svg"),
+  url("../img/photo-background.jpg");
+  background-position: 
+  bottom center,
+  top center;
+  background-repeat: 
+  no-repeat,
+  no-repeat;
+}
+
+.greetings p {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.causes h2 {
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* стилизация причин и особенностей */
+
+.hotel-search {
+  text-align: center;
+}
+
+.hotel-search h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.hotel-search p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.modal-search {
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+  
+}
+
+.hotel-search-form input,
+.hotel-search-form label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.hotel-search-form input {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+}
+
+.hotel-search-form input:hover {
+  background-color: #ebebeb;
+}
+
+.hotel-search-form input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.hotel-list {
+  list-style: none;
+}
+
+.hotel-item {
+  border-top: 1px solid #e5e5e5;
+}
+
+.hotel-item:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-item img {
+  width: 135px;
+  height: 90px;
+}
+
+.hotel-item h4 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.hotel-title {
+  color: #000000;
+}
+
+.hotel-title:hover,
+.hotel-title:focus {
+  color: #81b3d2;
+}
+
+.hotel-title:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.hotel-category {
+  margin: 0;
+}
+
+.hotel-category img {
+  display: inline-block;
+  height: 17px;
+  width: 18px;
+}
+
+.rating {
+  color: #666666;
+
+  background-color: #f2f2f2;
+}
+
+.main-footer {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.instagram {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.instagram:hover,
+.instagram:focus {
+  text-decoration: underline;
+}
+
+.instagram:active {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.footer-social {
+  list-style: none;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 14px;
+  line-height: 26px; 
+}
+
+.copyright a {
+  color: #000000;
+}
+
+.copyright a:hover,
+.copyright a:focus {
+  color: #81b3d2;
+}
+
+.copyright a:active {
+  color: #bdbbbc;
+}

@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <!--Шапка-->
@@ -11,21 +14,21 @@
         <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сайта «Седона».">
       </a>
 
-      <nav>
+      <nav  class="main-navigation">
         <ul>
           <li><a href="">Информация</a></li>
           <li><a href="">Фото и видео</a></li>
           <li><a href="index.html#map-of-arizona">Карта штата</a></li>
-          <li><a>Гостиницы</a></li>
+          <li><a class="active" href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
-    </header>
+    </header> 
 
     <main>
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
 
       <!--Фильтр-->
-      <section>
+      <section class="search-filter">
         <h3 class="visually-hidden">Фильтр для поиска гостиницы</h3>
 
         <form action="https://echo.htmlacademy.ru" method="get">
@@ -92,7 +95,7 @@
       </section>
 
       <!--Сортировка-->
-      <section>
+      <section class="sort-filter">
         <h3 class="visually-hidden">Фильтры отображения гостиниц</h3>
 
         <p>Найдено: 3</p>
@@ -130,14 +133,16 @@
       </section>
 
       <!--Список гостиниц-->
-      <section>
+      <section class="hotels">
         <h3 class="visually-hidden">Список гостиниц</h3>
 
-        <ul>
-          <li>
+        <ul class="hotel-list">
+          <li class="hotel-item">
             <img src="img/amara-resort-spa.jpg" width="135" height="90" alt="Фотография гостиницы Amara Resort & Spa.">
             <div>
-              <h4>Amara Resort & Spa</h4>
+              <a class="hotel-title" href="" target="_blank" aria-label="Переход на страницу гостиницы Amara Resort & Spa">
+                <h4>Amara Resort & Spa</h4>
+              </a>
               <table>
                 <tr>
                   <td>Гостиница</td>
@@ -145,21 +150,28 @@
                 </tr>
               </table>
               <p>
-                <a href="">Подробнее</a>
-                <a href="">Забронировать</a>
+                <a class="button button-blue" href="">Подробнее</a>
+                <button class="button button-brown" type="button">Забронировать</button>
               </p>
             </div>
             <div>
-              <!--  <img src="img/4-stars.png" width="90" height="17" alt="4 звезды">  -->
-              <span>4 звезды</span>
-              <p>Рейтинг: 8,5</p>
+              <figure class="hotel-category">
+                <figcaption class="visually-hidden"  aria-label="Гостиница категории 4 звезды">4 звезды</figcaption>
+                <img src="img/star.svg" width="18" height="17" alt="">
+                <img src="img/star.svg" width="18" height="17" alt="">
+                <img src="img/star.svg" width="18" height="17" alt="">
+                <img src="img/star.svg" width="18" height="17" alt="">
+              </figure>
+              <p class="rating">Рейтинг: 8,5</p>
             </div>
           </li>
 
-          <li>
+          <li class="hotel-item">
             <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Фотография мотеля Desert Quail Inn.">
             <div>
-              <h4>Desert Quail Inn</h4>
+              <a class="hotel-title" href="" target="_blank" aria-label="Переход на страницу мотеля Desert Quail Inn">
+                <h4>Desert Quail Inn</h4>
+              </a>
               <table>
                 <tr>
                   <td>Мотель</td>
@@ -167,21 +179,27 @@
                 </tr>
               </table>
               <p>
-                <a href="">Подробнее</a>
-                <a href="">Забронировать</a>
+                <a class="button button-blue" href="">Подробнее</a>
+                <button class="button button-brown" type="button">Забронировать</button>
               </p>
             </div>
             <div>
-              <!--  <img src="img/3-stars.png" width="65" height="17" alt="3 звезды">  -->
-              <span>3 звезды</span>
-              <p>Рейтинг: 8,9</p>
+              <figure class="hotel-category">
+                <figcaption class="visually-hidden"  aria-label="Мотель категории 3 звезды">3 звезды</figcaption>
+                <img src="img/star.svg" width="18" height="17" alt="">
+                <img src="img/star.svg" width="18" height="17" alt="">
+                <img src="img/star.svg" width="18" height="17" alt="">
+              </figure>
+              <p class="rating">Рейтинг: 8,9</p>
             </div>
           </li>
 
-          <li>
+          <li class="hotel-item">
             <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Фотография апартаментов Villas at Poco Diablo.">
             <div>
-              <h4>Villas at Poco Diablo</h4>
+              <a class="hotel-title" href="" target="_blank" aria-label="Переход на страницу аппартаментов Villas at Poco Diablo">
+                <h4>Villas at Poco Diablo</h4>
+              </a>
               <table>
                 <tr>
                   <td>Апартаменты</td>
@@ -189,14 +207,17 @@
                 </tr>
               </table>
               <p>
-                <a href="">Подробнее</a>
-                <a href="">Забронировать</a>
+                <a class="button button-blue" href="">Подробнее</a>
+                <button class="button button-brown" type="button">Забронировать</button>
               </p>
             </div>
             <div>
-              <!--  <img src="img/2-stars.png" width="41" height="17" alt="2 звезды">  -->
-              <span>2 звезды</span>
-              <p>Рейтинг: 9,2</p>
+              <figure class="hotel-category">
+                <figcaption class="visually-hidden"  aria-label="Апартаменты категории 2 звезды">2 звезды</figcaption>
+                <img src="img/star.svg" width="18" height="17" alt="">
+                <img src="img/star.svg" width="18" height="17" alt="">
+              </figure>
+              <p class="rating">Рейтинг: 9,2</p>
             </div>
           </li>
         </ul>
@@ -204,16 +225,24 @@
     </main>
 
     <!--Подвал-->
-    <footer>
-        <a href="" target="_blank" aria-label="Седона в Инстаграм">#visitSEDONA</a>
+    <footer class="main-footer">
+        <a class="instagram" href="" target="_blank" aria-label="Седона в Инстаграм">#visitSEDONA</a>
 
-      <div>
-        <a href="" target="_blank" aria-label="Седона в Твиттере">Седона в Твиттере</a>
-        <a href="" target="_blank" aria-label="Седона в Фейсбуке">Седона в Фейсбуке</a>
-        <a href="" target="_blank" aria-label="Седона на Ютубе">Седона на Ютубе</a>
-      </div>
+      <ul class="footer-social">
+        <li>
+          <a class="button button-blue social-btn" href="" target="_blank" aria-label="Седона в Твиттере">Седона в Твиттере</a>
+        </li>
+        <li>
+          <a class="button button-blue social-btn" href="" target="_blank" aria-label="Седона в Фейсбуке">Седона в Фейсбуке</a>
+        </li>
+        <li>
+          <a class="button button-blue social-btn" href="" target="_blank" aria-label="Седона на Ютубе">Седона на Ютубе</a>
+        </li>
+      </ul>
 
-      <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="HTML Academy">HTML Academy</a></p>
+      <p class="copyright">Website by
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="HTML Academy">HTML Academy</a>
+      </p>
     </footer>
 
   </body>

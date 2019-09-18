@@ -3,13 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <!--Шапка-->
     <header>
       <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сайта «Седона».">
 
-      <nav>
+      <nav class="main-navigation">
         <ul>
           <li><a href="">Информация</a></li>
           <li><a href="">Фото и видео</a></li>
@@ -21,18 +24,16 @@
 
     <main>
       <!--Седона: приветствие-->
-      <section>
-        <h1 class="visually-hidden">Город Седона для туристов!</h1>
-        <!--
-          <p>Welcome <span>to the gorgeous</span></p>
-          <p>"Because the Grand Canyon sucks!"</p>
-        -->
-        <img src="img/welcome.svg" width="459" height="353" alt="Welcome to the gorgeous Sedona «Because the Grand Canyon sucks!»">
+      <section class="greetings">
+        <div class="welcome">
+          <h1 class="visually-hidden">Город Седона для туристов!</h1>
+          <img src="img/welcome.svg" width="459" height="353" alt="Welcome to the gorgeous Sedona «Because the Grand Canyon sucks!»">
+        </div>
         <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       </section>
 
       <!--5 причин-->
-      <section>
+      <section class="causes">
         <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
 
         <ol>
@@ -72,7 +73,7 @@
       </section>
 
       <!--Особенности-->
-      <section>
+      <section class="features">
         <h2 class="visually-hidden">Особенности Седоны</h2>
 
         <ul>
@@ -98,39 +99,39 @@
       </section>
 
       <!--Поиск гостиницы-->
-      <section>
+      <section class="hotel-search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button type="button">Поиск гостиницы в Седоне</button>
+        <button class="button button-brown" type="button">Поиск гостиницы в Седоне</button>
         
         <!--Окно поиска гостиницы-->
-        <section>
+        <section class="modal-search">
           <h3 class="visually-hidden">Поиск гостиницы в Седоне</h3>
-          <form action="https://echo.htmlacademy.ru" method="get">
+          <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="get">
             <p>
-              <label for="arrival-date">Дата заезда</label>
+              <label for="arrival-date">Дата заезда:</label>
               <input id="arrival-date" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
             </p>
             <p>
-              <label for="date-of-departure">Дата выезда</label>
+              <label for="date-of-departure">Дата выезда:</label>
               <input id="date-of-departure" type="text" name="date-of-departure" value="" placeholder="4 июля 2017">
             </p>
             <p>
-              <label for="adults-count">Взрослые</label>
+              <label for="adults-count">Взрослые:</label>
               <input id="adults-count" type="number" name="adults-count" value="" placeholder="2" min="0">
             </p>
             <p>
-              <label for="children-count">Дети</label>
+              <label for="children-count">Дети:</label>
               <input id="children-count" type="number" name="children-count" value="" placeholder="0" min="0">
             </p>
-            <button type="submit">Найти</button>
+            <button class="button button-blue" type="submit">Найти</button>
           </form>
         </section>
       </section>
 
 
       <!--Карта штата-->
-      <section id="map-of-arizona">
+      <section class="map" id="map-of-arizona">
         <h2 class="visually-hidden">Карта штата</h2>
         <img src="img/map.png" width="1200" height="593" alt="Карта штата Аризона, США.">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d567185.0505102321!2d-112.21552183115146!3d34.908580631572256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1568539149547!5m2!1sru!2sru" width="1200" height="593" style="border:0;" allowfullscreen="" aria-label="Интерактивная карта штата Аризона, США."></iframe>
@@ -138,16 +139,24 @@
     </main>
 
     <!--Подвал-->
-    <footer>
-        <a href="" target="_blank" aria-label="Седона в Инстаграм">#visitSEDONA</a>
+    <footer class="main-footer">
+        <a class="instagram" href="" target="_blank" aria-label="Седона в Инстаграм">#visitSEDONA</a>
 
-      <div>
-        <a href="" target="_blank" aria-label="Седона в Твиттере">Седона в Твиттере</a>
-        <a href="" target="_blank" aria-label="Седона в Фейсбуке">Седона в Фейсбуке</a>
-        <a href="" target="_blank" aria-label="Седона на Ютубе">Седона на Ютубе</a>
-      </div>
+      <ul class="footer-social">
+        <li>
+          <a class="button button-blue social-btn" href="" target="_blank" aria-label="Седона в Твиттере">Седона в Твиттере</a>
+        </li>
+        <li>
+          <a class="button button-blue social-btn" href="" target="_blank" aria-label="Седона в Фейсбуке">Седона в Фейсбуке</a>
+        </li>
+        <li>
+          <a class="button button-blue social-btn" href="" target="_blank" aria-label="Седона на Ютубе">Седона на Ютубе</a>
+        </li>
+      </ul>
 
-      <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="HTML Academy">HTML Academy</a></p>
+      <p class="copyright">Website by
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="HTML Academy">HTML Academy</a>
+      </p>
     </footer>
 
   </body>
