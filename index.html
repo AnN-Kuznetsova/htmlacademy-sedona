@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <!--Шапка-->
+    <!--  Шапка  -->
     <header>
       <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сайта «Седона».">
 
@@ -23,7 +23,7 @@
     </header>
 
     <main>
-      <!--Седона: приветствие-->
+      <!--  Седона: приветствие  -->
       <section class="greetings">
         <div class="welcome">
           <h1 class="visually-hidden">Город Седона для туристов!</h1>
@@ -32,82 +32,70 @@
         <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
       </section>
 
-      <!--5 причин-->
-      <section class="causes">
+      <!--  5 причин  -->
+      <section class="advantages">
         <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
 
-        <ol>
-          <li>
+        <ol class="advantages-list">
+          <li class="advantages-item">
             <div>
               <h3>Настоящий городок</h3>
               <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <img src="img/photo-town.jpg" width="800" height="256" alt="Фотография городка.">
           </li>
-          <li>
+          <li class="advantages-item">
             <div>
               <h3>Там есть<br> Мост дьявола</h3>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
             <img src="img/photo-bridge-devil.jpg" width="800" height="256" alt="Фотография Моста дьявола.">
           </li>
-          <li>
-            <div>
+          <li class="advantages-item">
               <h3>Небольшая площадь</h3>
-              <p>Все достопримечательности находятся очень близко</p>
-            </div>
+               <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li>
-            <div>
+          <li class="advantages-item">
               <h3>Красивая дорога</h3>
               <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </div>
           </li>
-          <li>
-            <div>
+          <li class="advantages-item">
               <h3>Мало туристов</h3>
               <p>Большинство едет в гранд каньон и толпится там</p>
-            </div>
           </li>
         </ol>
       </section>
 
-      <!--Особенности-->
+      <!--  Особенности  -->
       <section class="features">
         <h2 class="visually-hidden">Особенности Седоны</h2>
 
-        <ul>
-          <li>
-            <div>
-              <h3>Жильё</h3>
-              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </div>
+        <ul class="features-list">
+          <li class="feature-item">
+            <h3>Жильё</h3>
+            <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li>
-            <div>
-              <h3>Еда</h3>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </div>
+          <li class="feature-item">
+            <h3>Еда</h3>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li>
-            <div>
-              <h3>Сувениры</h3>
-              <p>Не только китайского, но и местного производства!</p>
-            </div>
+          <li class="feature-item">
+            <h3>Сувениры</h3>
+            <p>Не только китайского, но и местного производства!</p>
           </li>
         </ul>
       </section>
 
-      <!--Поиск гостиницы-->
+      <!--  Поиск гостиницы  -->
       <section class="hotel-search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button class="button button-brown" type="button">Поиск гостиницы в Седоне</button>
-        
-        <!--Окно поиска гостиницы-->
+
+        <!--  Окно поиска гостиницы  -->
         <section class="modal-search">
           <h3 class="visually-hidden">Поиск гостиницы в Седоне</h3>
-          <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="get">
+          <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
             <p>
               <label for="arrival-date">Дата заезда:</label>
               <input id="arrival-date" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
@@ -130,7 +118,7 @@
       </section>
 
 
-      <!--Карта штата-->
+      <!--  Карта штата  -->
       <section class="map" id="map-of-arizona">
         <h2 class="visually-hidden">Карта штата</h2>
         <img src="img/map.png" width="1200" height="593" alt="Карта штата Аризона, США.">
@@ -138,7 +126,7 @@
       </section>
     </main>
 
-    <!--Подвал-->
+    <!--  Подвал  -->
     <footer class="main-footer">
         <a class="instagram" href="" target="_blank" aria-label="Седона в Инстаграм">#visitSEDONA</a>
 

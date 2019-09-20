@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <!--Шапка-->
+    <!--  Шапка  -->
     <header>
       <a href="index.html">
         <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сайта «Седона».">
@@ -22,30 +22,30 @@
           <li><a class="active" href="hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
-    </header> 
+    </header>
 
     <main>
       <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
 
-      <!--Фильтр-->
+      <!--  Фильтр для поиска гостиницы  -->
       <section class="search-filter">
         <h3 class="visually-hidden">Фильтр для поиска гостиницы</h3>
 
-        <form action="https://echo.htmlacademy.ru" method="get">
-          
+        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+
           <fieldset>
             <legend>Инфраструктура:</legend>
             <ul>
               <li>
-                <input class="visually-hidden" id="filter-pool" type="checkbox" name="pool" checked>
+                <input class="visually-hidden  filter-input-checkbox" id="filter-pool" type="checkbox" name="pool" checked>
                 <label for="filter-pool">Бассейн</label>
               </li>
               <li>
-                <input class="visually-hidden" id="filter-parking" type="checkbox" name="parking">
+                <input class="visually-hidden filter-input-checkbox" id="filter-parking" type="checkbox" name="parking">
                 <label for="filter-parking">Парковка</label>
               </li>
               <li>
-                <input class="visually-hidden" id="filter-wifi" type="checkbox" name="wifi">
+                <input class="visually-hidden filter-input-checkbox" id="filter-wifi" type="checkbox" name="wifi">
                 <label for="filter-wifi">Wi-Fi</label>
               </li>
             </ul>
@@ -55,20 +55,20 @@
             <legend>Тип жилья:</legend>
             <ul>
               <li>
-                <input class="visually-hidden" id="filter-hotel" type="checkbox" name="hotel" checked>
+                <input class="visually-hidden filter-input-checkbox" id="filter-hotel" type="checkbox" name="hotel" checked>
                 <label for="filter-hotel">Гостиница</label>
               </li>
               <li>
-                <input class="visually-hidden" id="filter-motel" type="checkbox" name="motel" checked>
+                <input class="visually-hidden filter-input-checkbox" id="filter-motel" type="checkbox" name="motel" checked>
                 <label for="filter-motel">Мотель</label>
               </li>
               <li>
-                <input class="visually-hidden" id="filter-apartments" type="checkbox" name="apartments" checked>
+                <input class="visually-hidden filter-input-checkbox" id="filter-apartments" type="checkbox" name="apartments" checked>
                 <label for="filter-apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
-          
+
           <div>
             <fieldset>
               <legend>Стоимость в сутки (р):</legend>
@@ -82,19 +82,19 @@
               <!-- Слайдер -->
               <div>
                 <label class="visually-hidden" for="filter-cost-min">Выберите минимальную стоимость жилья в сутки в рублях:</label>
-                <input id="filter-cost-min" type="range" name="cost-min" min="0" max="3000" step="100" value="0">    
+                <input id="filter-cost-min" type="range" name="cost-min" min="0" max="3000" step="100" value="0">
                 <label class="visually-hidden" for="filter-cost-max">Выберите максимальную стоимость жилья в сутки в рублях:</label>
-                <input id="filter-cost-max" type="range" name="cost-max" min="0" max="3000" step="100" value="2750">         
+                <input id="filter-cost-max" type="range" name="cost-max" min="0" max="3000" step="100" value="2750">
               </div>
 
             </fieldset>
-            <button type="submit">Показать</button>
+            <button class="filter-button" type="submit">Показать</button>
           </div>
 
         </form>
       </section>
 
-      <!--Сортировка-->
+      <!--  Сортировка  -->
       <section class="sort-filter">
         <h3 class="visually-hidden">Фильтры отображения гостиниц</h3>
 
@@ -103,36 +103,36 @@
           <legend>Сортировка:</legend>
           <ul>
             <li>
-              <input class="visually-hidden" id="sorting-price" type="radio" name="sorting-filter" value="price" checked>
+              <input class="visually-hidden filter-input-radio" id="sorting-price" type="radio" name="sorting-filter" value="price" checked>
               <label for="sorting-price">По цене</label>
             </li>
             <li>
-              <input class="visually-hidden" id="sorting-type" type="radio" name="sorting-filter" value="type">
+              <input class="visually-hidden filter-input-radio" id="sorting-type" type="radio" name="sorting-filter" value="type">
               <label for="sorting-type">По типу</label>
             </li>
             <li>
-              <input class="visually-hidden" id="sorting-rating" type="radio" name="sorting-filter" value="rating">
+              <input class="visually-hidden filter-input-radio" id="sorting-rating" type="radio" name="sorting-filter" value="rating">
               <label for="sorting-rating">По рейтингу</label>
             </li>
           </ul>
         </fieldset>
-        
+
         <fieldset>
           <legend class="visually-hidden">Тип сортировки:</legend>
           <ul>
             <li>
-              <input class="visually-hidden" id="sort-ascending" type="radio" name="sorting" value="ascending">
+              <input class="visually-hidden sort-type-radio" id="sort-ascending" type="radio" name="sorting" value="ascending">
               <label class="visually-hidden" for="sort-ascending">Сортировка по возрастанию</label>
             </li>
             <li>
-              <input class="visually-hidden" id="sort-descending" type="radio" name="sorting" value="descending" checked>
+              <input class="visually-hidden sort-type-radio" id="sort-descending" type="radio" name="sorting" value="descending" checked>
               <label class="visually-hidden" for="sort-descending">Сортировка по убыванию</label>
             </li>
           </ul>
         </fieldset>
       </section>
 
-      <!--Список гостиниц-->
+      <!--  Список гостиниц  -->
       <section class="hotels">
         <h3 class="visually-hidden">Список гостиниц</h3>
 
@@ -224,7 +224,7 @@
       </section>
     </main>
 
-    <!--Подвал-->
+    <!--  Подвал  -->
     <footer class="main-footer">
         <a class="instagram" href="" target="_blank" aria-label="Седона в Инстаграм">#visitSEDONA</a>
 
