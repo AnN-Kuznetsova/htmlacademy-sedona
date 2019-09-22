@@ -6,11 +6,12 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/grids-style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <!--  Шапка  -->
-    <header>
-      <a href="index.html">
+    <header class="main-header container">
+      <a  class="logo" href="index.html">
         <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сайта «Седона».">
       </a>
 
@@ -31,7 +32,7 @@
       <section class="search-filter">
         <h3 class="visually-hidden">Фильтр для поиска гостиницы</h3>
 
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+        <form class="search-form container" action="https://echo.htmlacademy.ru" method="get">
 
           <fieldset>
             <legend>Инфраструктура:</legend>
@@ -97,39 +98,41 @@
       <!--  Сортировка  -->
       <section class="sort-filter">
         <h3 class="visually-hidden">Фильтры отображения гостиниц</h3>
+        <div class="container">
+          <p>Найдено: 3</p>
+          <fieldset>
+            <legend>Сортировка:</legend>
+            <ul>
+              <li>
+                <input class="visually-hidden filter-input-radio" id="sorting-price" type="radio" name="sorting-filter" value="price" checked>
+                <label for="sorting-price">По цене</label>
+              </li>
+              <li>
+                <input class="visually-hidden filter-input-radio" id="sorting-type" type="radio" name="sorting-filter" value="type">
+                <label for="sorting-type">По типу</label>
+              </li>
+              <li>
+                <input class="visually-hidden filter-input-radio" id="sorting-rating" type="radio" name="sorting-filter" value="rating">
+                <label for="sorting-rating">По рейтингу</label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <p>Найдено: 3</p>
-        <fieldset>
-          <legend>Сортировка:</legend>
-          <ul>
-            <li>
-              <input class="visually-hidden filter-input-radio" id="sorting-price" type="radio" name="sorting-filter" value="price" checked>
-              <label for="sorting-price">По цене</label>
-            </li>
-            <li>
-              <input class="visually-hidden filter-input-radio" id="sorting-type" type="radio" name="sorting-filter" value="type">
-              <label for="sorting-type">По типу</label>
-            </li>
-            <li>
-              <input class="visually-hidden filter-input-radio" id="sorting-rating" type="radio" name="sorting-filter" value="rating">
-              <label for="sorting-rating">По рейтингу</label>
-            </li>
-          </ul>
-        </fieldset>
+          <fieldset>
+            <legend class="visually-hidden">Тип сортировки:</legend>
+            <ul>
+              <li>
+                <input class="visually-hidden sort-type-radio" id="sort-ascending" type="radio" name="sorting" value="ascending">
+                <label class="vvisually-hidden" for="sort-ascending">Сортировка по возрастанию</label>
+              </li>
+              <li>
+                <input class="visually-hidden sort-type-radio" id="sort-descending" type="radio" name="sorting" value="descending" checked>
+                <label class="vvisually-hidden" for="sort-descending">Сортировка по убыванию</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
 
-        <fieldset>
-          <legend class="visually-hidden">Тип сортировки:</legend>
-          <ul>
-            <li>
-              <input class="visually-hidden sort-type-radio" id="sort-ascending" type="radio" name="sorting" value="ascending">
-              <label class="visually-hidden" for="sort-ascending">Сортировка по возрастанию</label>
-            </li>
-            <li>
-              <input class="visually-hidden sort-type-radio" id="sort-descending" type="radio" name="sorting" value="descending" checked>
-              <label class="visually-hidden" for="sort-descending">Сортировка по убыванию</label>
-            </li>
-          </ul>
-        </fieldset>
       </section>
 
       <!--  Список гостиниц  -->
@@ -138,86 +141,92 @@
 
         <ul class="hotel-list">
           <li class="hotel-item">
-            <img src="img/amara-resort-spa.jpg" width="135" height="90" alt="Фотография гостиницы Amara Resort & Spa.">
-            <div>
-              <a class="hotel-title" href="" target="_blank" aria-label="Переход на страницу гостиницы Amara Resort & Spa">
-                <h4>Amara Resort & Spa</h4>
-              </a>
-              <table>
-                <tr>
-                  <td>Гостиница</td>
-                  <td>от 4000 р.</td>
-                </tr>
-              </table>
-              <p>
-                <a class="button button-blue" href="">Подробнее</a>
-                <button class="button button-brown" type="button">Забронировать</button>
-              </p>
-            </div>
-            <div>
-              <figure class="hotel-category">
-                <figcaption class="visually-hidden"  aria-label="Гостиница категории 4 звезды">4 звезды</figcaption>
-                <img src="img/star.svg" width="18" height="17" alt="">
-                <img src="img/star.svg" width="18" height="17" alt="">
-                <img src="img/star.svg" width="18" height="17" alt="">
-                <img src="img/star.svg" width="18" height="17" alt="">
-              </figure>
-              <p class="rating">Рейтинг: 8,5</p>
-            </div>
-          </li>
-
-          <li class="hotel-item">
-            <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Фотография мотеля Desert Quail Inn.">
-            <div>
-              <a class="hotel-title" href="" target="_blank" aria-label="Переход на страницу мотеля Desert Quail Inn">
-                <h4>Desert Quail Inn</h4>
-              </a>
-              <table>
-                <tr>
-                  <td>Мотель</td>
-                  <td>от 3000 р.</td>
-                </tr>
-              </table>
-              <p>
-                <a class="button button-blue" href="">Подробнее</a>
-                <button class="button button-brown" type="button">Забронировать</button>
-              </p>
-            </div>
-            <div>
-              <figure class="hotel-category">
-                <figcaption class="visually-hidden"  aria-label="Мотель категории 3 звезды">3 звезды</figcaption>
-                <img src="img/star.svg" width="18" height="17" alt="">
-                <img src="img/star.svg" width="18" height="17" alt="">
-                <img src="img/star.svg" width="18" height="17" alt="">
-              </figure>
-              <p class="rating">Рейтинг: 8,9</p>
+            <div class="container">
+              <img src="img/amara-resort-spa.jpg" width="135" height="90" alt="Фотография гостиницы Amara Resort & Spa.">
+              <div class="hotel-info">
+                <a class="hotel-title" href="" target="_blank" aria-label="Переход на страницу гостиницы Amara Resort & Spa">
+                  <h4>Amara Resort & Spa</h4>
+                </a>
+                <table>
+                  <tr>
+                    <td>Гостиница</td>
+                    <td>от 4000 р.</td>
+                  </tr>
+                </table>
+                <p>
+                  <a class="button button-blue" href="">Подробнее</a>
+                  <button class="button button-brown" type="button">Забронировать</button>
+                </p>
+              </div>
+              <div class="hotel-category">
+                <figure>
+                  <figcaption class="visually-hidden"  aria-label="Гостиница категории 4 звезды">4 звезды</figcaption>
+                  <img src="img/star.svg" width="18" height="17" alt="">
+                  <img src="img/star.svg" width="18" height="17" alt="">
+                  <img src="img/star.svg" width="18" height="17" alt="">
+                  <img src="img/star.svg" width="18" height="17" alt="">
+                </figure>
+                <p class="rating">Рейтинг: 8,5</p>
+              </div>
             </div>
           </li>
 
           <li class="hotel-item">
-            <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Фотография апартаментов Villas at Poco Diablo.">
-            <div>
-              <a class="hotel-title" href="" target="_blank" aria-label="Переход на страницу аппартаментов Villas at Poco Diablo">
-                <h4>Villas at Poco Diablo</h4>
-              </a>
-              <table>
-                <tr>
-                  <td>Апартаменты</td>
-                  <td>от 2000 р.</td>
-                </tr>
-              </table>
-              <p>
-                <a class="button button-blue" href="">Подробнее</a>
-                <button class="button button-brown" type="button">Забронировать</button>
-              </p>
+            <div class="container">
+              <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Фотография мотеля Desert Quail Inn.">
+              <div class="hotel-info">
+                <a class="hotel-title" href="" target="_blank" aria-label="Переход на страницу мотеля Desert Quail Inn">
+                  <h4>Desert Quail Inn</h4>
+                </a>
+                <table>
+                  <tr>
+                    <td>Мотель</td>
+                    <td>от 3000 р.</td>
+                  </tr>
+                </table>
+                <p>
+                  <a class="button button-blue" href="">Подробнее</a>
+                  <button class="button button-brown" type="button">Забронировать</button>
+                </p>
+              </div>
+              <div class="hotel-category">
+                <figure>
+                  <figcaption class="visually-hidden"  aria-label="Мотель категории 3 звезды">3 звезды</figcaption>
+                  <img src="img/star.svg" width="18" height="17" alt="">
+                  <img src="img/star.svg" width="18" height="17" alt="">
+                  <img src="img/star.svg" width="18" height="17" alt="">
+                </figure>
+                <p class="rating">Рейтинг: 8,9</p>
+              </div>
             </div>
-            <div>
-              <figure class="hotel-category">
-                <figcaption class="visually-hidden"  aria-label="Апартаменты категории 2 звезды">2 звезды</figcaption>
-                <img src="img/star.svg" width="18" height="17" alt="">
-                <img src="img/star.svg" width="18" height="17" alt="">
-              </figure>
-              <p class="rating">Рейтинг: 9,2</p>
+          </li>
+
+          <li class="hotel-item">
+            <div class="container">
+              <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Фотография апартаментов Villas at Poco Diablo.">
+              <div class="hotel-info">
+                <a class="hotel-title" href="" target="_blank" aria-label="Переход на страницу аппартаментов Villas at Poco Diablo">
+                  <h4>Villas at Poco Diablo</h4>
+                </a>
+                <table>
+                  <tr>
+                    <td>Апартаменты</td>
+                    <td>от 2000 р.</td>
+                  </tr>
+                </table>
+                <p>
+                  <a class="button button-blue" href="">Подробнее</a>
+                  <button class="button button-brown" type="button">Забронировать</button>
+                </p>
+              </div>
+              <div class="hotel-category">
+                <figure>
+                  <figcaption class="visually-hidden"  aria-label="Апартаменты категории 2 звезды">2 звезды</figcaption>
+                  <img src="img/star.svg" width="18" height="17" alt="">
+                  <img src="img/star.svg" width="18" height="17" alt="">
+                </figure>
+                <p class="rating">Рейтинг: 9,2</p>
+              </div>
             </div>
           </li>
         </ul>
@@ -225,7 +234,7 @@
     </main>
 
     <!--  Подвал  -->
-    <footer class="main-footer">
+    <footer class="main-footer footer-inner-page">
         <a class="instagram" href="" target="_blank" aria-label="Седона в Инстаграм">#visitSEDONA</a>
 
       <ul class="footer-social">

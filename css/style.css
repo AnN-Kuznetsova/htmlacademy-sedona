@@ -1,15 +1,31 @@
 /*  Глобальные  */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 html {
+  box-sizing: border-box;
   background-color: #f2f2f2;
 }
 
-body {
-  margin: 0;
-  margin-left: 40px;
-  margin-right: 40px;
-  padding: 0;
+.block {
+  box-sizing: content-box;
+}
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -72,11 +88,15 @@ a {
 
 /*  Шапка  */
 
+.logo {
+  width: 140px;
+  height: 72px;
+}
+
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
-
   text-align: center;
 }
 
@@ -121,8 +141,8 @@ a {
   url("../img/polygon.svg"),
   url("../img/photo-background.jpg");
   background-position:
-  bottom center,
-  top center;
+  center bottom,
+  center top;
   background-repeat:
   no-repeat,
   no-repeat;
@@ -422,7 +442,7 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.hotel-category {
+.hotel-category figure {
   margin: 0;
 }
 

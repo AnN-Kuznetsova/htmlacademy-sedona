@@ -6,11 +6,12 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/grids-style.css" rel="stylesheet">
   </head>
   <body>
     <!--  Шапка  -->
-    <header>
-      <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сайта «Седона».">
+    <header class="main-header container">
+      <img class="logo" src="img/logo-sedona.svg" width="140" height="72" alt="Логотип сайта «Седона».">
 
       <nav class="main-navigation">
         <ul>
@@ -29,7 +30,7 @@
           <h1 class="visually-hidden">Город Седона для туристов!</h1>
           <img src="img/welcome.svg" width="459" height="353" alt="Welcome to the gorgeous Sedona «Because the Grand Canyon sucks!»">
         </div>
-        <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
       </section>
 
       <!--  5 причин  -->
@@ -90,7 +91,7 @@
       <section class="hotel-search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="button button-brown" type="button">Поиск гостиницы в Седоне</button>
+        <button class="button button-brown button-show-modal" type="button">Поиск гостиницы в Седоне</button>
 
         <!--  Окно поиска гостиницы  -->
         <section class="modal-search">
@@ -122,12 +123,12 @@
       <section class="map" id="map-of-arizona">
         <h2 class="visually-hidden">Карта штата</h2>
         <img src="img/map.png" width="1200" height="593" alt="Карта штата Аризона, США.">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d567185.0505102321!2d-112.21552183115146!3d34.908580631572256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1568539149547!5m2!1sru!2sru" width="1200" height="593" style="border:0;" allowfullscreen="" aria-label="Интерактивная карта штата Аризона, США."></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d567185.0505102321!2d-112.21552183115146!3d34.908580631572256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru" width="1200" height="593" style="border:0;" allowfullscreen="" aria-label="Интерактивная карта штата Аризона, США."></iframe>
       </section>
     </main>
 
     <!--  Подвал  -->
-    <footer class="main-footer">
+    <footer class="main-footer footer-main-page">
         <a class="instagram" href="" target="_blank" aria-label="Седона в Инстаграм">#visitSEDONA</a>
 
       <ul class="footer-social">
