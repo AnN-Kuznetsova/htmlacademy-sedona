@@ -155,7 +155,7 @@ a {
 }
 
 
-/*   5 причин  */
+/*   Причины  */
 
 .advantages h2 {
   font-size: 14px;
@@ -167,33 +167,37 @@ a {
 
 .advantages-list {
   list-style: none;
-
-  counter-reset: advantagesCounter;
 }
 
-.advantages-item {
+.advantages-list .item {
   font: inherit;
   color: #333333;
   text-align: center;
-
-  background-color: #eeeeee;
 }
 
-.advantages-item:first-child,
-.advantages-item:nth-child(2) {
-  background-color: #81b3d2;
-}
-
-.advantages-item::before {
-  counter-increment: advantagesCounter;
-  content: "— №"counter(advantagesCounter)" —";
-}
-
-.advantages-item h3 {
+.advantages-list .item h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: bold;
   color: #000000;
+}
+
+.advantages-item {
+  background-color: #eeeeee;
+}
+
+.advantages-photo {
+  background-color: #81b3d2;
+}
+
+.advantages-photo .item,
+.advantages-photo .item h3 {
+  color: #ffffff;
+}
+
+.advantages-photo img {
+  width: 800px;
+  height: 256px;
 }
 
 
@@ -201,19 +205,6 @@ a {
 
 .features-list {
   list-style: none;
-}
-
-.feature-item {
-  font: inherit;
-  color: #333333;
-  text-align: center;
-}
-
-.feature-item h3 {
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: bold;
-  color: #000000;
 }
 
 

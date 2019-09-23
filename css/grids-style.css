@@ -2,8 +2,10 @@ body {
   width: 1200px;
   min-height: 2762px;
   margin: 0;
-  margin-left: auto;
-  margin-right: auto;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  margin-left: 40px;
+  margin-right: 40px;
   padding: 0;
 }
 
@@ -89,27 +91,95 @@ body {
 .greetings p {
   margin: 0;
   margin-top: 60px;
+  margin-right: 40px;
+  margin-left: 40px;
 
   /*background-color: rgba(0, 255,  0, 0.1);*/
 }
 
 
-/*  5 причин  */
+/*  Причины  */
 
 .advantages h2 {
   margin: 0;
-  margin-top: 32px;
+  margin-top: 30px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   margin-top: 55px;
   padding: 0;
 }
 
-.advantages-item  h3,
-.advantages-item p {
+.advantages-list .item {
+  width: 400px;
+  padding-top: 43px;
+  padding-bottom: 58px;
+}
+
+.advantages-list .item  h3 {
+  width: 160px;
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages-list .item  p {
+  width: 280px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages-list .advantages-item p:first-of-type {
+  margin-top: 25px;
+}
+
+.advantages-list .advantages-item p:nth-of-type(2) {
+  margin-top: 25px;
+}
+
+.advantages-item {
+  min-height: 256px;
+}
+
+.advantages-item:nth-child(2) {
+  order: -1;
+}
+
+.advantages-list .advantages-photo {
+  display: flex;
+  width: 1200px;
+}
+
+.item-photo-reverse {
+  flex-direction: row-reverse;
+}
+
+
+/* Особенности  */
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 0;
+}
+
+.features-list .feature-item {
+  min-height: 330px;
+  padding-top: 157px;
+  padding-bottom: 85px;
+}
+
+.features-list .feature-item p {
+  margin-top: 25px;
 }
 
 
@@ -122,11 +192,15 @@ body {
 .hotel-search h2 {
   margin: 0;
   margin-top: 56px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .hotel-search p {
   margin: 0;
   margin-top: 35px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .button-show-modal {
@@ -212,7 +286,13 @@ body {
   align-items: center;
 }
 
+/*.hotel-item img {
+  align-self: flex-start;
+  margin-top: 30px;
+}*/
+
 .hotel-info {
+  width: 753px;
   margin-left: 30px;
   margin-right: auto;
 }
