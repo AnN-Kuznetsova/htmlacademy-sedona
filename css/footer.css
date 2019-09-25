@@ -1,0 +1,120 @@
+/*  Подвал  */
+
+.main-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: inherit;
+  min-height: 120px;
+  /* IE11 */
+  height: 10px;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-main-page {
+  position: absolute;
+
+  margin-top: -115px;
+}
+
+.instagram {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.instagram:hover,
+.instagram:focus {
+  text-decoration: underline;
+}
+
+.instagram:active {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  max-width: 576px;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  list-style: none;
+
+  /*background-color: rgba(0, 255, 85, 0.2);*/
+}
+
+.footer-social li {
+  margin-right: 6px;
+}
+
+.footer-social li:last-child {
+  margin-right: 0;
+}
+
+.social-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 48px;
+  height: 48px;
+
+  outline: none;
+}
+
+.social-btn:active img {
+  opacity: 0.3;
+}
+
+.social-tv img {
+  width: 17px;
+  height: 15px;
+}
+
+.social-fb img {
+  width: 12px;
+  height: 22px;
+}
+
+.social-yt img {
+  width: 20px;
+  height: 16px;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.copyright a {
+  margin-left: 6px;
+
+  outline: none;
+}
+
+.copyright path {
+  fill: #000000;
+}
+
+.copyright a:hover path,
+.copyright a:focus path {
+  fill: #81b3d2;
+}
+
+.copyright a:active path {
+  fill: #bdbbbc;
+}

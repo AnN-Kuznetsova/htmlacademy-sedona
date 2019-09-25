@@ -1,0 +1,156 @@
+/*  Сортировка  */
+
+.sort-filter .container {
+  display: flex;
+  align-items: center;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.sort-name-flex {
+  display: flex;
+  align-items: center;
+}
+
+.sort-filter p {
+  margin: 0;
+  margin-right: 50px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.sort-filter fieldset {
+  border: none;
+}
+
+.sort-filter legend {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-filter ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.sort-name {
+  max-width: 807px;
+  margin: 0;
+  padding: 0;
+}
+
+.sort-name legend {
+  margin-right: 40px;
+}
+
+.sort-name li {
+  margin-right: 35px;
+}
+
+.sort-name-radio + label {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-name-radio:hover + label {
+  color: #81b3d2;
+}
+
+.sort-name-radio:focus + label {
+  color: #81b3d2;
+
+  border-radius: 2px;
+  box-shadow:
+    0 0 0 3px #ffffff,
+    0 0 0 4px #81b3d2;
+}
+
+.sort-name-radio:active + label {
+  color: #000000;
+
+  border-bottom: 0;
+}
+
+.sort-name-radio:checked + label {
+  color: #81b3d2;
+
+  border-bottom: none;
+}
+
+/*  Кастомные радиокнопки  */
+
+.sort-type {
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+}
+
+.sort-type li {
+  margin-right: 25px;
+}
+
+.sort-type li:last-child {
+  margin-right: 0;
+}
+
+.sort-type-radio + label {
+  position: relative;
+}
+
+.sort-type-radio + label::before {
+  position: absolute;
+  content: "";
+  left: -11px;
+
+  width: 11px;
+  height: 10px;
+
+  background-image: url("../img/sprite-up-down-dir.png");
+  background-repeat: no-repeat;
+}
+
+.up-dir + label::before {
+  background-position: -5px -105px;
+}
+
+.up-dir:hover + label::before,
+.up-dir:focus + label::before {
+  background-position: -5px -85px;
+}
+
+.up-dir:active + label::before,
+.up-dir:checked + label::before {
+  background-position: -5px -65px;
+}
+
+.down-dir + label::before {
+  background-position: -5px -45px;
+}
+
+.down-dir:hover + label::before,
+.down-dir:focus + label::before {
+  background-position: -5px -25px;
+}
+
+.down-dir:active + label::before,
+.down-dir:checked + label::before {
+  background-position: -5px -5px;
+}
+
+.sort-type-radio:focus + label::before {
+  border-radius: 2px;
+  box-shadow:
+    0 0 0 3px #ffffff,
+    0 0 0 4px #81b3d2;
+ }

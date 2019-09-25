@@ -1,0 +1,72 @@
+/*  Поиск гостиницы  */
+
+.hotel-search {
+  position: relative;
+
+  text-align: center;
+}
+
+.hotel-search h2 {
+  margin: 0;
+  margin-top: 56px;
+  margin-right: 40px;
+  margin-left: 40px;
+
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.hotel-search p {
+  margin: 0;
+  margin-top: 35px;
+  margin-right: 40px;
+  margin-left: 40px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.button-show-modal {
+  margin-top: 52px;
+}
+
+
+/*  Окно поиска гостиницы  */
+
+.modal-search {
+  position: absolute;
+  width: 568px;
+  left: calc(50% - 568px / 2);
+  padding: 55px 55px 55px 55px;
+  z-index: 10;
+
+  background-color:  #ffffff;
+
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+}
+
+.modal-search-form input,
+.modal-search-form label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.modal-search-form input {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+}
+
+.modal-search-form input:hover {
+  background-color: #ebebeb;
+}
+
+.modal-search-form input:focus {
+  background-color: #ffffff;
+  outline: 2px solid #e5e5e5;
+}

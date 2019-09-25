@@ -1,0 +1,41 @@
+/*  Седона: приветствие  */
+
+.greetings {
+  margin-top: -16px;
+  text-align: center;
+}
+
+.welcome {
+  display: flex;
+
+  min-height: 510px;
+  height: 10px;  /* IE11 */
+
+  background-color: #687781;
+  background-image:
+    url("../img/polygon.svg"),
+    url("../img/photo-background.jpg");
+  background-position:
+    center bottom,
+    center top;
+  background-repeat:
+    no-repeat,
+    no-repeat;
+}
+
+.welcome img {
+  margin: auto;
+}
+
+.greetings p {
+  margin: 0;
+  margin-top: 60px;
+  margin-right: 40px;
+  margin-left: 40px;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+
+  /*background-color: rgba(0, 255,  0, 0.1);*/
+}

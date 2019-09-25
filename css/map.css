@@ -1,0 +1,24 @@
+/*  Карта штата  */
+
+.map {
+  min-height: 593px;
+
+  background-color: #e5e5e5;
+}
+
+.map-wrapper {
+  height: 593px;
+
+  overflow: hidden;
+}
+
+.map img,
+.map iframe {
+  width: 1200px;
+  height: 593px;
+}
+
+.map iframe {
+  position: relative;
+  top: -598px;
+}

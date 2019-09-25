@@ -1,4 +1,5 @@
 /*  Глобальные  */
+
 *,
 *::before,
 *::after {
@@ -25,7 +26,29 @@ html {
   overflow: hidden;
 }
 
+.container {
+  width: 1058px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.focus-outline:focus {
+  outline: none;
+  border-radius: 2px;
+  box-shadow:
+    0 0 0 3px #ffffff,
+    0 0 0 4px #81b3d2;
+}
+
 body {
+  width: 1200px;
+  margin: 0;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 0;
+
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -37,10 +60,23 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+/*  Ссыдки  */
+
 a {
   text-decoration: none;
 }
 
+/*  Чекбокся и радиокнопки  */
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  cursor: pointer;
+}
+
+input[type="checkbox"]:disabled + label,
+input[type="radio"]:disabled + label {
+  cursor: default;
+}
 
 /*  Кнопки  */
 
@@ -54,6 +90,7 @@ a {
 
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .button-blue {
@@ -88,411 +125,40 @@ a {
 
 /*  Шапка  */
 
-.logo {
-  width: 140px;
-  height: 72px;
-}
-
-.main-navigation {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.main-navigation ul {
-  list-style: none;
-}
-
-.main-navigation a {
-  color: #000000;
-
-  outline: none;
-}
-
-.main-navigation a:hover,
-.main-navigation a:focus {
-  color: #81b3d2;
-}
-
-.main-navigation a:active {
-  color: #000000;
-  opacity: 0.3;
-}
-
-.main-navigation .active {
-  color: #766357;
-}
 
 
 /*  index.html  */
 
 /*  Седона: приветствие  */
 
-.greetings {
-  text-align: center;
-}
-
-.welcome {
-  min-height: 510px;
-
-  background-color: #687781;
-  background-image:
-  url("../img/polygon.svg"),
-  url("../img/photo-background.jpg");
-  background-position:
-  center bottom,
-  center top;
-  background-repeat:
-  no-repeat,
-  no-repeat;
-}
-
-.greetings p {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-}
 
 
 /*   Причины  */
 
-.advantages h2 {
-  font-size: 14px;
-  line-height: 26px;
-  color: #333333;
-  font-weight: normal;
-  text-align: center;
-}
-
-.advantages-list {
-  list-style: none;
-}
-
-.advantages-list .item {
-  font: inherit;
-  color: #333333;
-  text-align: center;
-}
-
-.advantages-list .item h3 {
-  font-size: 21px;
-  line-height: 21px;
-  font-weight: bold;
-  color: #000000;
-}
-
-.advantages-item {
-  background-color: #eeeeee;
-}
-
-.advantages-photo {
-  background-color: #81b3d2;
-}
-
-.advantages-photo .item,
-.advantages-photo .item h3 {
-  color: #ffffff;
-}
-
-.advantages-photo img {
-  width: 800px;
-  height: 256px;
-}
-
-
-/*  Особенности  */
-
-.features-list {
-  list-style: none;
-}
 
 
 /*  Поиск гостиницы  */
 
-.hotel-search {
-  text-align: center;
-}
-
-.hotel-search h2 {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: bold;
-}
-
-.hotel-search p {
-  font-size: 14px;
-  line-height: 24px;
-  color: #333333;
-}
-
-
-/*  Окно поиска гостиницы  */
-
-.modal-search {
-  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
-}
-
-.modal-search-form input,
-.modal-search-form label {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.modal-search-form input {
-  background-color: #f2f2f2;
-  border: none;
-  outline: none;
-}
-
-.modal-search-form input:hover {
-  background-color: #ebebeb;
-}
-
-.modal-search-form input:focus {
-  background-color: #ffffff;
-  outline: 2px solid #e5e5e5;
-}
 
 
 /*  Карта штата  */
 
-.map {
-  background-color: #e5e5e5;
-}
 
 
 /*  hotels.html  */
 
 /*  Фильтр для поиска гостиницы  */
 
-.search-filter {
-  font: inherit;
-  color: #ffffff;
-
-  background-color: #687781;
-  background-image: url("../img/photo-background-filter.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
-.search-form fieldset {
-  border: none;
-}
-
-.search-form legend {
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: bold;
-}
-
-.search-form ul {
-  list-style: none;
-}
-
-.filter-input-checkbox:hover + label,
-.filter-input-checkbox:focus + label {
-  color: #ffffff;
-
-  border-bottom: 1px dotted #ffffff;
-}
-
-.filter-input-checkbox:disabled + label {
-  color: #6a6a6a;
-}
-
-.search-form table {
-  text-align: center;
-
-  border: 2px solid #ffffff;
-  border-radius: 3px;
-}
-
-.search-form td {
-  width: 110px;
-}
-
-.filter-button {
-  font: inherit;
-  text-transform: uppercase;
-  color: #ffffff;
-
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 3px;
-}
-
-.filter-button:hover,
-.filter-button:focus,
-.filter-button:active {
-  color: #000000;
-
-  background-color: #ffffff;
-  outline: none;
-}
 
 
 /*  Сортировка  */
 
-.sort-filter p {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-}
-
-.sort-filter fieldset {
-  border: none;
-}
-
-.sort-filter legend {
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.sort-filter ul {
-  list-style: none;
-}
-
-.filter-input-radio + label {
-  font-size: 12px;
-  line-height: 18px;
-  color: rgba(0, 0, 0, 0.3);
-  border-bottom: 1px dotted #81b3d2;
-}
-
-.filter-input-radio:hover + label,
-.filter-input-radio:focus + label {
-  color: #81b3d2;
-}
-
-.filter-input-radio:active + label {
-  color: #000000;
-  border-bottom: 0;
-}
-
-.filter-input-radio:checked + label {
-  color: #81b3d2;
-  border-bottom: none;
-}
-
-.sort-type-radio + label {
-  color: #cacaca;
-}
-
-.sort-type-radio:hover + label,
-.sort-type-radio:focus + label {
-  color: #000000;
-}
-
-.sort-type-radio:active + label,
-.sort-type-radio:checked + label {
-  color: #81b3d2;
-}
 
 
 /*  Список гостиниц  */
 
-.hotel-list {
-  list-style: none;
-}
 
-.hotel-item {
-  border-top: 1px solid #e5e5e5;
-}
-
-.hotel-item:last-child {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.hotel-item img {
-  width: 135px;
-  height: 90px;
-}
-
-.hotel-item h4 {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-}
-
-.hotel-title {
-  color: #000000;
-
-  outline: none;
-}
-
-.hotel-title:hover,
-.hotel-title:focus {
-  color: #81b3d2;
-}
-
-.hotel-title:active {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.hotel-category figure {
-  margin: 0;
-}
-
-.hotel-category img {
-  display: inline-block;
-  height: 17px;
-  width: 18px;
-}
-
-.rating {
-  color: #666666;
-
-  background-color: #f2f2f2;
-}
 
 
 /*  Подвал  */
 
-.main-footer {
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
-.instagram {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
-  color: #000000;
-}
-
-.instagram:hover,
-.instagram:focus {
-  text-decoration: underline;
-}
-
-.instagram:active {
-  color: rgba(0, 0, 0, 0.5);
-  text-decoration: none;
-}
-
-.footer-social {
-  list-style: none;
-  text-align: center;
-}
-
-.copyright {
-  font-size: 14px;
-  line-height: 26px;
-}
-
-.copyright a {
-  color: #000000;
-  outline: none;
-}
-
-.copyright a:hover,
-.copyright a:focus {
-  color: #81b3d2;
-}
-
-.copyright a:active {
-  color: #bdbbbc;
-}

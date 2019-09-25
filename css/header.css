@@ -1,0 +1,84 @@
+/*  Шапка  */
+
+.main-header {
+  text-align: center;
+}
+
+.logo {
+  z-index: 10;
+
+  width: 140px;
+  height: 72px;
+}
+
+.logo:focus {
+  outline: none;
+}
+
+.logo:focus img {
+  border-radius: 2px;
+  box-shadow:
+    0 0 0 2px #ffffff,
+    0 0 0 3px #81b3d2;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.main-navigation ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0;
+  margin-top: -77px;
+  margin-bottom: 16px;
+  padding: 0;
+  min-height: 56px;
+  /* IE11 */
+  height: 10px;
+
+  list-style: none;
+}
+
+.main-navigation li {
+  width: 195px;
+  max-width: 195px;
+  margin: 0;
+
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.main-navigation li:nth-child(4n),
+.main-navigation li:nth-child(4n-1) {
+  text-align: right;
+}
+
+.main-navigation li:nth-child(4n-2) {
+  margin-right: 140px;
+}
+
+.main-navigation a {
+  color: #000000;
+  outline: none;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: #81b3d2;
+}
+
+.main-navigation a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.main-navigation .active {
+  color: #766357;
+}
