@@ -3,12 +3,12 @@
 .main-footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: inherit;
   min-height: 120px;
   /* IE11 */
-  height: 10px;
+  /*height: 10px;*/
 
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -16,10 +16,16 @@
 .footer-main-page {
   position: absolute;
 
-  margin-top: -115px;
+  margin-top: -120px;
 }
 
 .instagram {
+  display: inline-block;
+  width: 400px;
+  text-align: center;
+  /*margin-left: 132px;
+  margin-right: 45px;*/
+
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -39,17 +45,15 @@
 .footer-social {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 
-  max-width: 576px;
+  /*max-width: 570px;*/
+  width: 400px;
   margin: 0;
   padding: 0;
 
-  text-align: center;
-
   list-style: none;
-
-  /*background-color: rgba(0, 255, 85, 0.2);*/
 }
 
 .footer-social li {
@@ -65,8 +69,10 @@
   justify-content: center;
   align-items: center;
 
-  width: 48px;
-  height: 48px;
+  min-width: 46px;
+  min-height: 48px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 
   outline: none;
 }
@@ -75,7 +81,7 @@
   opacity: 0.3;
 }
 
-.social-tv img {
+.social-tw img {
   width: 17px;
   height: 15px;
 }
@@ -92,9 +98,13 @@
 
 .copyright {
   display: flex;
+  justify-content: center;
   align-items: center;
 
+  width: 400px;
   margin: 0;
+  /*margin-right: 102px;
+  margin-left: 20px;*/
 
   font-size: 14px;
   line-height: 26px;

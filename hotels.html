@@ -103,26 +103,31 @@
       <!--  Сортировка  -->
       <section class="sort-filter">
         <h3 class="visually-hidden">Фильтры отображения гостиниц</h3>
-        <div class="container">
+
+        <form class="sort-form container" action="https://echo.htmlacademy.ru" method="get">
           <p>Найдено: 3</p>
           <fieldset class="sort-name">
-            <div class="sort-name-flex">
-              <legend>Сортировка:</legend>
-              <ul>
-                <li>
-                  <input class="visually-hidden sort-name-radio" id="sorting-price" type="radio" name="sorting-filter" value="price" checked>
-                  <label for="sorting-price">По цене</label>
-                </li>
-                <li>
-                  <input class="visually-hidden sort-name-radio" id="sorting-type" type="radio" name="sorting-filter" value="type">
-                  <label for="sorting-type">По типу</label>
-                </li>
-                <li>
-                  <input class="visually-hidden sort-name-radio" id="sorting-rating" type="radio" name="sorting-filter" value="rating">
-                  <label for="sorting-rating">По рейтингу</label>
-                </li>
-              </ul>
-            </div>
+           <!-- <div class="sort-name-flex"> -->
+              <legend class="visually-hidden">Сортировка:</legend>
+              <div class="sort-name-wraper">
+                <h4>Сортировка: </h4>
+                <ul>
+                  <li>
+                    <input class="visually-hidden sort-name-radio" id="sorting-price" type="radio" name="sorting-filter" value="price" checked>
+                    <label for="sorting-price">По цене</label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden sort-name-radio" id="sorting-type" type="radio" name="sorting-filter" value="type">
+                    <label for="sorting-type">По типу</label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden sort-name-radio" id="sorting-rating" type="radio" name="sorting-filter" value="rating">
+                    <label for="sorting-rating">По рейтингу</label>
+                  </li>
+                </ul>
+
+              </div>
+          <!--  </div>  -->
           </fieldset>
 
           <fieldset class="sort-type">
@@ -142,7 +147,7 @@
               </li>
             </ul>
           </fieldset>
-        </div>
+        </form>
       </section>
 
       <!--  Список гостиниц  -->
@@ -249,18 +254,18 @@
 
       <ul class="footer-social">
         <li>
-          <a class="social-btn button-blue social-tv" href="" target="_blank" aria-label="Седона в Твиттере.">
-            <img src="img/tv-icon.svg" width="17px" height="15px" alt="Седона в Твиттере.">
+          <a class="social-btn button-blue social-tw" href="" target="_blank" aria-label="Седона в Твиттере.">
+            <img src="img/tw-icon.svg" width="17" height="15" alt="Седона в Твиттере.">
           </a>
         </li>
         <li>
           <a class="social-btn button-blue social-fb" href="" target="_blank" aria-label="Седона в Фейсбуке.">
-            <img src="img/fb-icon.svg" width="12px" height="22px" alt="Седона в Фейсбуке.">
+            <img src="img/fb-icon.svg" width="12" height="22" alt="Седона в Фейсбуке.">
           </a>
         </li>
         <li>
           <a class="social-btn button-blue social-yt" href="" target="_blank" aria-label="Седона на Ютубе.">
-            <img src="img/youtube.svg" width="20px" height="16px" alt="Седона на Ютубе.">
+            <img src="img/youtube.svg" width="20" height="16" alt="Седона на Ютубе.">
           </a>
         </li>
       </ul>

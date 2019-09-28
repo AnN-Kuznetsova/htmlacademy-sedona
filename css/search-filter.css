@@ -8,30 +8,25 @@
 
   background-color: #687781;
   background-image: url("../img/photo-background-filter.jpg");
-  background-position: top center;
+  background-position: center -57px;
   background-repeat: no-repeat;
 }
 
 .search-form {
   display: flex;
+  flex-wrap: wrap;
+
+  padding-top: 26px;
+  padding-bottom: 32px;
 }
 
 .search-form fieldset {
   width: 230px;
-  margin: 30px 25px 30px 0;
+  margin-right: 25px;
+  margin-left: 0;
   padding: 0;
 
   border: none;
-}
-
-.last-column {
-  margin-left: auto;
-}
-
-fieldset.cost-by-day {
-  width: 320px;
-  margin-right: 0;
-  margin-bottom: 22px;
 }
 
 .search-form legend {
@@ -44,11 +39,36 @@ fieldset.cost-by-day {
   list-style: none;
 
   margin: 0;
+  margin-top: 25px;
   padding: 0;
 }
 
+.search-form li {
+  margin-bottom: 25px;
+}
+
+.search-form li:last-child {
+  margin-bottom: 0;
+}
+
+.last-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 318px;
+  margin-left: auto;
+}
+
+fieldset.cost-by-day {
+  width: 100%;
+  margin-right: 0;
+}
+
+
 .cost-by-day table {
   width: 100%;
+  margin-top: 11px;
 
   text-align: center;
 
@@ -57,7 +77,8 @@ fieldset.cost-by-day {
 }
 
 .search-form td {
-  width: 110px;
+  width: 50%;
+  padding: 4px 15px;
 }
 
 .double-range {
@@ -66,6 +87,13 @@ fieldset.cost-by-day {
 }
 
 .filter-button {
+  align-self: center;
+  max-width: 100%;
+  margin-top: 18px;
+  margin-right: 9px;
+  margin-bottom: 2px;
+  padding: 5px 34px;
+
   font: inherit;
   text-transform: uppercase;
   color: #ffffff;
@@ -91,7 +119,7 @@ fieldset.cost-by-day {
 .filter-input-checkbox + label {
   position: relative;
 
-  margin-left: 42px;
+  margin-left: 40px;
 }
 
 .filter-input-checkbox:hover + label,
@@ -110,7 +138,7 @@ fieldset.cost-by-day {
 .filter-input-checkbox + label::before {
   position: absolute;
   content: "";
-  left: -42px;
+  left: -40px;
 
   width: 26px;
   height: 23px;

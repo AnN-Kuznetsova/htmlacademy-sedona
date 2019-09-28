@@ -1,3 +1,8 @@
+/*  временно для ПП  */
+body {
+  /*margin-bottom: -1px;*/
+}
+
 /*  Глобальные  */
 
 *,
@@ -27,7 +32,7 @@ html {
 }
 
 .container {
-  width: 1058px;
+  width: 1056px;
   margin: 0 auto;
   padding: 0;
 }
@@ -43,10 +48,10 @@ html {
 body {
   width: 1200px;
   margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  /*margin-left: 40px;
-  margin-right: 40px;*/
+  /*margin-left: auto;
+  margin-right: auto;*/
+  margin-left: 40px;
+  margin-right: 40px;
   padding: 0;
 
   font-family: "PT Sans", Arial, sans-serif;
@@ -66,7 +71,7 @@ a {
   text-decoration: none;
 }
 
-/*  Чекбокся и радиокнопки  */
+/*  Чекбоксы и радиокнопки  */
 
 input[type="checkbox"] + label,
 input[type="radio"] + label {
@@ -81,6 +86,7 @@ input[type="radio"]:disabled + label {
 /*  Кнопки  */
 
 .button {
+  padding: 8px 17px;
   font: inherit;
   font-weight: bold;
 

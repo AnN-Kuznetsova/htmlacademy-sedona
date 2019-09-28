@@ -1,21 +1,16 @@
 /*  Сортировка  */
 
-.sort-filter .container {
+.sort-form {
   display: flex;
   align-items: center;
 
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.sort-name-flex {
-  display: flex;
-  align-items: center;
+  padding-top: 31px;
+  padding-bottom: 31px;
 }
 
 .sort-filter p {
   margin: 0;
-  margin-right: 50px;
+  margin-right: 47px;
 
   font-size: 21px;
   line-height: 26px;
@@ -26,10 +21,10 @@
   border: none;
 }
 
-.sort-filter legend {
-  font-size: 12px;
-  line-height: 18px;
+.sort-name-wraper {
+  display: flex;
 }
+
 
 .sort-filter ul {
   display: flex;
@@ -47,12 +42,18 @@
   padding: 0;
 }
 
-.sort-name legend {
+.sort-name h4 {
+  margin: 0;
   margin-right: 40px;
+  padding: 0;
+
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: normal;
 }
 
 .sort-name li {
-  margin-right: 35px;
+  margin-right: 33px;
 }
 
 .sort-name-radio + label {
@@ -97,7 +98,7 @@
 }
 
 .sort-type li {
-  margin-right: 25px;
+  margin-right: 24px;
 }
 
 .sort-type li:last-child {
@@ -112,40 +113,41 @@
   position: absolute;
   content: "";
   left: -11px;
+  top: -5px;
 
   width: 11px;
   height: 10px;
 
-  background-image: url("../img/sprite-up-down-dir.png");
+  background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
 }
 
 .up-dir + label::before {
-  background-position: -5px -105px;
+  background-position: -10px -448px;
 }
 
 .up-dir:hover + label::before,
 .up-dir:focus + label::before {
-  background-position: -5px -85px;
+  background-position: -10px -418px;
 }
 
 .up-dir:active + label::before,
 .up-dir:checked + label::before {
-  background-position: -5px -65px;
+  background-position: -10px -388px;
 }
 
 .down-dir + label::before {
-  background-position: -5px -45px;
+  background-position: -10px -358px;
 }
 
 .down-dir:hover + label::before,
 .down-dir:focus + label::before {
-  background-position: -5px -25px;
+  background-position: -10px -328px;
 }
 
 .down-dir:active + label::before,
 .down-dir:checked + label::before {
-  background-position: -5px -5px;
+  background-position: -10px -298px;
 }
 
 .sort-type-radio:focus + label::before {

@@ -8,7 +8,7 @@
 
 .hotel-search h2 {
   margin: 0;
-  margin-top: 56px;
+  margin-top: 51px;
   margin-right: 40px;
   margin-left: 40px;
 
@@ -19,7 +19,7 @@
 
 .hotel-search p {
   margin: 0;
-  margin-top: 35px;
+  margin-top: 25px;
   margin-right: 40px;
   margin-left: 40px;
 
@@ -29,7 +29,11 @@
 }
 
 .button-show-modal {
-  margin-top: 52px;
+  margin-top: 46px;
+  padding: 30px 139px;
+
+  font-size: 21px;
+  line-height: 26px;
 }
 
 
@@ -37,18 +41,33 @@
 
 .modal-search {
   position: absolute;
-  width: 568px;
   left: calc(50% - 568px / 2);
-  padding: 55px 55px 55px 55px;
+  padding: 55px;
   z-index: 10;
 
   background-color:  #ffffff;
-
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
 }
 
-.modal-search-form input,
-.modal-search-form label {
+.modal-search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 458px;
+}
+
+.modal-search-form .search-form-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.search-form-item input,
+.search-form-item label {
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -56,11 +75,115 @@
   text-transform: uppercase;
 }
 
-.modal-search-form input {
+.search-form-item label {
+  margin-right: auto;
+}
+
+.search-form-item input {
+  width: 308px;
+  padding: 6px 12px;
+
   background-color: #f2f2f2;
   border: none;
   outline: none;
 }
+
+.search-form-item.number-item {
+  width: 226px;
+  margin-bottom: 0;
+}
+
+.search-form-item.number-item:last-of-type {
+  width: 179px;
+}
+
+.plus-minus {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: #f2f2f2;
+}
+
+.plus-minus input {
+  width: 36px;
+  padding-right: 4px;
+  padding-left: 4px;
+  text-align: center;
+}
+
+/*  Плюс / Минус / Календарь */
+
+.minus,
+.plus,
+.calendar {
+  display: inline-block;
+  vertical-align: middle;
+
+  min-width: 38px;
+  min-height: 38px;
+  margin: 0;
+  padding: 0;
+
+  background-color: #f2f2f2;
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeate;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.minus {
+  margin-right: 2px;
+  background-position: 3px -23px;
+}
+
+.minus:hover,
+.minus:focus {
+  background-position: 3px -77px;
+}
+
+.minus:active {
+  background-position: 3px -131px;
+}
+
+.plus {
+  background-position: 3px 4px;
+}
+
+.plus:hover,
+.plus:focus {
+  background-position: 3px -50px;
+}
+
+.plus:active {
+  background-position: 3px -104px;
+}
+
+.calendar {
+  background-position: -2px -164px;
+}
+
+.calendar:hover,
+.calendar:focus {
+  background-position: -2px -248px;
+}
+
+.calendar:active {
+  background-position: -2px -206px;
+}
+
+.minus:focus,
+.plus:focus,
+.calendar:focus {
+  width: 34px;
+  height: 34px;
+  box-shadow: inset 0 0 0 2px #e5e5e5;
+}
+
+/*  ********  */
 
 .modal-search-form input:hover {
   background-color: #ebebeb;
@@ -69,4 +192,14 @@
 .modal-search-form input:focus {
   background-color: #ffffff;
   outline: 2px solid #e5e5e5;
+}
+
+.modal-search-form > button {
+  width: 100%;
+  margin-top: 52px;
+  padding-top: 16px;
+  padding-bottom: 17px;
+
+  font-size: 21px;
+  line-height: 26px;
 }
