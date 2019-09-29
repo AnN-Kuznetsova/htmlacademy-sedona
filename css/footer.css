@@ -5,10 +5,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
   width: inherit;
   min-height: 120px;
-  /* IE11 */
-  /*height: 10px;*/
 
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -17,6 +16,19 @@
   position: absolute;
 
   margin-top: -120px;
+}
+
+.main-footer::before {
+  content: "";
+
+  width: 0;
+  height: 120px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .instagram {
@@ -72,8 +84,8 @@
   justify-content: center;
   align-items: center;
 
-  min-width: 46px;
-  min-height: 48px;
+  width: 46px;
+  height: 48px;
   margin-top: 6px;
   margin-bottom: 6px;
 
@@ -111,26 +123,26 @@
   line-height: 26px;
 }
 
-.copyright a {
+.copyright-logo  {
   margin-left: 9px;
   margin-top: 6px;
 
   outline: none;
 }
 
-.copyright path,
-.copyright rect {
+.copyright-logo  path,
+.copyright-logo  rect {
   fill: #000000;
 }
 
-.copyright a:hover path,
-.copyright a:focus path,
-.copyright a:hover rect,
-.copyright a:focus rect {
+.copyright-logo:hover path,
+.copyright-logo:focus path,
+.copyright-logo:hover rect,
+.copyright-logo:focus rect {
   fill: #81b3d2;
 }
 
-.copyright a:active path,
-.copyright a:active rect {
+.copyright-logo:active path,
+.copyright-logo:active rect {
   fill: #bdbbbc;
 }

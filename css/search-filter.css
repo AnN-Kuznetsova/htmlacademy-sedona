@@ -60,47 +60,75 @@
   margin-left: auto;
 }
 
-fieldset.cost-by-day {
+fieldset.filter-price {
   width: 100%;
   margin-right: 0;
 }
 
-
-.cost-by-day table {
+.price-controls {
   position: relative;
 
-  width: 100%;
-  margin-top: 11px;
-  text-align: center;
+  height: 36px;
+  margin-top: 10px;
+
+  font-size: 0;
 
   border: 2px solid #ffffff;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
-.search-form td {
-  width: 50%;
-  padding-top: 3px;
-  padding-right: 15px;
-  padding-bottom: 4px;
-  padding-left: 15px;
-}
-
-.cost-by-day table::before {
+.price-controls::after {
   position: absolute;
   content: "";
-  left: 157px;
-  top: 5px;
+  top: 50%;
+  left: 50%;
 
-  width: 0;
+  width: 2px;
   height: 22px;
-  margin: 0;
-  padding: 0;
 
-  border-left: 2px solid #ffffff;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 90px;
+  padding-left: 65px;
+
+  font-size: 14px;
+  line-height: 32px;
+
+  cursor: pointer;
+}
+
+.price-controls input {
+  vertical-align: middle;
+  width: 58px;
+  margin: 0;
+  margin-left: -3px;
+  padding: 0;
+  padding-left: 3px;
+
+  font: inherit;
+  font-size: 14px;
+  line-height: 32px;
+  color: inherit;
+
+  background: none;
+  border: none;
+}
+
+.price-controls input:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 2px #81b3d2;
 }
 
 .filter-button {
   align-self: center;
+
   max-width: 100%;
   margin-top: 18px;
   margin-right: 9px;
@@ -113,7 +141,7 @@ fieldset.cost-by-day {
 
   background-color: transparent;
   border: 2px solid #ffffff;
-  border-radius: 3px;
+  border-radius: 2px;
 
   cursor: pointer;
 }
@@ -187,7 +215,52 @@ fieldset.cost-by-day {
 
 /*  Двойной range  */
 
-.double-range {
+.double-range-controls {
+  position: relative;
+
   width: 100%;
-  margin-top: 10px;
+  margin-top: 20px;
+}
+
+.double-range-controls .scale {
+  height: 2px;
+
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.double-range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 20px;
+  height: 20px;
+  padding: 0;
+
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover,
+.range-toggle:focus {
+  background-color: #687781;
+  outline: none;
+  box-shadow: 0 0 0 3px #81b3d2;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
 }

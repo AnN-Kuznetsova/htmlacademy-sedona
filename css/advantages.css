@@ -25,7 +25,7 @@
   list-style: none;
 }
 
-.advantages-list .item {
+.advantages-list-item {
   width: 400px;
   padding-top: 47px;
   padding-bottom: 58px;
@@ -35,8 +35,8 @@
   text-align: center;
 }
 
-.advantages-list .item h3 {
-  width: 160px;
+.advantages-list-item h3 {
+  width: 156px;
   margin: 0;
   margin-left: auto;
   margin-right: auto;
@@ -47,6 +47,13 @@
   color: #000000;
 }
 
+.advantages-list-item  p {
+  width: 280px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .advantages-item {
   min-height: 256px;
 
@@ -55,13 +62,6 @@
 
 .advantages-item:nth-child(2) {
   order: -1;
-}
-
-.advantages-list .item  p {
-  width: 280px;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .advantages-item p:first-of-type {
@@ -83,17 +83,17 @@
   flex-direction: row-reverse;
 }
 
-.advantages-photo .item,
-.advantages-photo .item h3 {
+.advantages-photo h3,
+.advantages-photo p {
   color: #ffffff;
 }
 
-.advantages-photo .item img {
+.advantages-photo img {
   width: 800px;
   height: 256px;
 }
 
-.advantages-photo .item p {
+.advantages-photo p {
   width: 305px;
 }
 
@@ -110,7 +110,7 @@
   list-style: none;
 }
 
-.features-list .feature-item {
+.features-item {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -119,33 +119,29 @@
   min-height: 330px;
   padding-top: 161px;
   padding-bottom: 82px;
+
+  background-repeat: no-repeat;
 }
 
-.features-list .feature-item p {
+.features-item p {
   margin-top: 25px;
   width: 290px;
 }
 
-.features-list .feature-item::before {
-  position: absolute;
-  content: "";
-  top: 56px;
-
-  width: 75px;
-  height: 76px;
-
-  background-position: center bottom;
-  background-repeat: no-repeat;
-}
-
-.feature-house::before {
+.feature-house {
   background-image: url("../img/icon-house.svg");
+  background-size: 75px 72px;
+  background-position: center 59px;
 }
 
-.feature-food::before {
+.feature-food {
   background-image: url("../img/icon-food.svg");
+  background-size: 74px 70px;
+  background-position: center 61px;
 }
 
-.feature-present::before {
+.feature-present {
   background-image: url("../img/icon-present.svg");
+  background-size: 64px 76px;
+  background-position: center 56px;
 }

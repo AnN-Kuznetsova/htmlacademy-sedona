@@ -8,8 +8,7 @@
 .welcome {
   display: flex;
 
-  min-height: 507px;
-  height: 10px;  /* IE11 */
+  height: 507px;
 
   background-color: #687781;
   background-image:
