@@ -30,6 +30,8 @@
 
 .button-show-modal {
   margin-top: 46px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 30px 139px;
 
   font-size: 21px;

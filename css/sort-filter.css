@@ -1,10 +1,14 @@
 /*  Сортировка  */
 
+.sort-filter {
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .sort-form {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 
-  padding-top: 31px;
+  padding-top: 29px;
   padding-bottom: 31px;
 }
 
@@ -23,6 +27,7 @@
 
 .sort-name-wraper {
   display: flex;
+  align-items: baseline;
 }
 
 
@@ -42,7 +47,7 @@
   padding: 0;
 }
 
-.sort-name h4 {
+.sort-name-title {
   margin: 0;
   margin-right: 40px;
   padding: 0;
@@ -89,7 +94,7 @@
   border-bottom: none;
 }
 
-/*  Кастомные радиокнопки  */
+/*  Кноки сортировки по возрастанию / убыванию  */
 
 .sort-type {
   margin: 0;
@@ -113,7 +118,7 @@
   position: absolute;
   content: "";
   left: -11px;
-  top: -5px;
+  top: -15px;
 
   width: 11px;
   height: 10px;

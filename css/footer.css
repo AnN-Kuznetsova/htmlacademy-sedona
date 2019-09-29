@@ -21,10 +21,12 @@
 
 .instagram {
   display: inline-block;
+  vertical-align: middle;
+
   width: 400px;
+  margin: 0;
+  margin-top: -3px;
   text-align: center;
-  /*margin-left: 132px;
-  margin-right: 45px;*/
 
   font-size: 21px;
   line-height: 26px;
@@ -34,11 +36,13 @@
 
 .instagram:hover,
 .instagram:focus {
-  text-decoration: underline;
+  color: #81b3d2;
+
+  outline: none;
 }
 
 .instagram:active {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
 }
 
@@ -48,7 +52,6 @@
   justify-content: center;
   align-items: center;
 
-  /*max-width: 570px;*/
   width: 400px;
   margin: 0;
   padding: 0;
@@ -103,28 +106,31 @@
 
   width: 400px;
   margin: 0;
-  /*margin-right: 102px;
-  margin-left: 20px;*/
 
   font-size: 14px;
   line-height: 26px;
 }
 
 .copyright a {
-  margin-left: 6px;
+  margin-left: 9px;
+  margin-top: 6px;
 
   outline: none;
 }
 
-.copyright path {
+.copyright path,
+.copyright rect {
   fill: #000000;
 }
 
 .copyright a:hover path,
-.copyright a:focus path {
+.copyright a:focus path,
+.copyright a:hover rect,
+.copyright a:focus rect {
   fill: #81b3d2;
 }
 
-.copyright a:active path {
+.copyright a:active path,
+.copyright a:active rect {
   fill: #bdbbbc;
 }
