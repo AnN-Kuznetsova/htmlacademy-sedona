@@ -94,7 +94,7 @@
   border-bottom: none;
 }
 
-/*  Кноки сортировки по возрастанию / убыванию  */
+/*  Кнопки сортировки по возрастанию / убыванию  */
 
 .sort-type {
   margin: 0;
@@ -110,49 +110,49 @@
   margin-right: 0;
 }
 
-.sort-type-radio + label {
+.sort-form /*.sort-type-radio + label*/ {
   position: relative;
 }
 
 .sort-type-radio + label::before {
   position: absolute;
   content: "";
-  left: -11px;
-  top: -15px;
+  top: 50%;
 
   width: 11px;
-  height: 10px;
+  height: 11px;
 
   background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
+  transform: translate(-100%, -50%);
 }
 
 .up-dir + label::before {
-  background-position: -10px -448px;
+  background-position: -10px -447px;
 }
 
 .up-dir:hover + label::before,
 .up-dir:focus + label::before {
-  background-position: -10px -418px;
+  background-position: -10px -417px;
 }
 
 .up-dir:active + label::before,
 .up-dir:checked + label::before {
-  background-position: -10px -388px;
+  background-position: -10px -387px;
 }
 
 .down-dir + label::before {
-  background-position: -10px -358px;
+  background-position: -10px -357px;
 }
 
 .down-dir:hover + label::before,
 .down-dir:focus + label::before {
-  background-position: -10px -328px;
+  background-position: -10px -327px;
 }
 
 .down-dir:active + label::before,
 .down-dir:checked + label::before {
-  background-position: -10px -298px;
+  background-position: -10px -297px;
 }
 
 .sort-type-radio:focus + label::before {

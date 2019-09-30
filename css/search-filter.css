@@ -107,6 +107,7 @@ fieldset.filter-price {
 .price-controls input {
   vertical-align: middle;
   width: 58px;
+  height: 32px;
   margin: 0;
   margin-left: -3px;
   padding: 0;
@@ -252,9 +253,9 @@ fieldset.filter-price {
 
 .range-toggle:hover,
 .range-toggle:focus {
-  background-color: #687781;
+  background-color: #81b3d2;
   outline: none;
-  box-shadow: 0 0 0 3px #81b3d2;
+  box-shadow: 0 0 0 2px #81b3d2;
 }
 
 .range-toggle-min {
