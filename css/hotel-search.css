@@ -194,7 +194,8 @@
 
 .modal-search-form input:focus {
   background-color: #ffffff;
-  outline: 2px solid #e5e5e5;
+  /*outline: 2px solid #e5e5e5;*/
+  border: 2px solid #e5e5e5;
 }
 
 .modal-search-form > button {

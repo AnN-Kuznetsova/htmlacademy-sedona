@@ -6,7 +6,7 @@
 
 .sort-form {
   display: flex;
-  align-items: flex-end;
+  align-items: baseline;
 
   padding-top: 29px;
   padding-bottom: 31px;
@@ -85,7 +85,7 @@
 .sort-name-radio:active + label {
   color: #000000;
 
-  border-bottom: 0;
+  border-bottom: none;
 }
 
 .sort-name-radio:checked + label {
@@ -103,59 +103,52 @@
 }
 
 .sort-type li {
-  margin-right: 24px;
+  margin-right: 13px;
 }
 
 .sort-type li:last-child {
   margin-right: 0;
 }
 
-.sort-form /*.sort-type-radio + label*/ {
-  position: relative;
-}
-
-.sort-type-radio + label::before {
-  position: absolute;
-  content: "";
-  top: 50%;
+.sort-type-radio + label {
+  display: block;
 
   width: 11px;
   height: 11px;
 
   background-image: url("../img/spritesheet.png");
   background-repeat: no-repeat;
-  transform: translate(-100%, -50%);
 }
 
-.up-dir + label::before {
+.up-dir + label {
   background-position: -10px -447px;
 }
 
-.up-dir:hover + label::before,
-.up-dir:focus + label::before {
+.up-dir:hover + label,
+.up-dir:focus + label {
   background-position: -10px -417px;
 }
 
-.up-dir:active + label::before,
-.up-dir:checked + label::before {
+.up-dir:active + label,
+.up-dir:checked + label {
   background-position: -10px -387px;
 }
 
-.down-dir + label::before {
+.down-dir + label {
   background-position: -10px -357px;
 }
 
-.down-dir:hover + label::before,
-.down-dir:focus + label::before {
+.down-dir:hover + label,
+.down-dir:focus + label {
   background-position: -10px -327px;
 }
 
-.down-dir:active + label::before,
-.down-dir:checked + label::before {
+.down-dir:active + label,
+.down-dir:checked + label {
   background-position: -10px -297px;
 }
 
-.sort-type-radio:focus + label::before {
+.sort-type-radio:focus + label {
   border-radius: 2px;
   box-shadow:
     0 0 0 3px #ffffff,
