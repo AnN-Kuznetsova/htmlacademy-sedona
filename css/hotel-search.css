@@ -42,6 +42,7 @@
 /*  Окно поиска гостиницы  */
 
 .modal-search {
+  display: block;
   position: absolute;
   left: calc(50% - 568px / 2);
   padding: 55px;
@@ -91,6 +92,16 @@
   outline: none;
 }
 
+.search-form-item input:hover {
+  background-color: #ebebeb;
+}
+
+.search-form-item input:focus {
+  background-color: #ffffff;
+  /*outline: 2px solid #e5e5e5;*/
+  box-shadow: inset 0 0 0 2px #e5e5e5;
+}
+
 .search-form-item.number-item {
   width: 226px;
   margin-bottom: 0;
@@ -100,7 +111,7 @@
   width: 179px;
 }
 
-.plus-minus {
+.number-of-people {
   display: flex;
 
   margin: 0;
@@ -109,10 +120,11 @@
   background-color: #f2f2f2;
 }
 
-.plus-minus input {
+.number-of-people input {
   width: 36px;
   padding-right: 4px;
   padding-left: 4px;
+
   text-align: center;
 }
 
@@ -124,79 +136,92 @@
   display: inline-block;
   vertical-align: middle;
 
-  min-width: 38px;
-  min-height: 38px;
+  width: 38px;
+  height: 38px;
   margin: 0;
   padding: 0;
 
   background-color: #f2f2f2;
-  background-image: url("../img/spritesheet.png");
-  background-repeat: no-repeate;
-
   border: none;
   outline: none;
   cursor: pointer;
 }
 
-.minus {
-  margin-right: 2px;
-  background-position: 3px -23px;
+.calendar svg {
+  vertical-align: middle;
+  text-align: center;
 }
 
-.minus:hover,
-.minus:focus {
-  background-position: 3px -77px;
+.calendar path {
+  fill: #a9a9a9;
 }
 
-.minus:active {
-  background-position: 3px -131px;
-}
-
+.minus,
 .plus {
-  background-position: 3px 4px;
+  position: relative;
 }
 
-.plus:hover,
-.plus:focus {
-  background-position: 3px -50px;
+.minus::before,
+.plus::before,
+.plus::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+
+  width: 11px;
+  height: 3px;
+  margin: 0;
+  padding: 0;
+
+  background-color: #a9a9a9;
+  transform: translateX(-50%) translateY(-50%);
 }
 
-.plus:active {
-  background-position: 3px -104px;
+.minus::before,
+.plus::before {
+  transform: translateX(-50%) translateY(-50%);
 }
 
-.calendar {
-  background-position: -2px -164px;
+.plus::after {
+  transform: translateX(-50%) translateY(-50%) rotate(90deg);
 }
 
-.calendar:hover,
-.calendar:focus {
-  background-position: -2px -248px;
+.calendar:hover path,
+.calendar:focus path {
+  fill: #000000;
 }
 
-.calendar:active {
-  background-position: -2px -206px;
+.minus:hover::before,
+.minus:focus::before,
+.plus:hover::before,
+.plus:hover::after,
+.plus:focus::before,
+.plus:focus::after {
+  background-color: #000000;
+}
+
+.calendar:active path {
+  fill: #81b3d2;
+}
+
+.minus:active::before,
+.plus:active::before,
+.plus:active::after {
+  background-color: #81b3d2;
 }
 
 .minus:focus,
 .plus:focus,
 .calendar:focus {
-  width: 34px;
+  /*width: 34px;
   height: 34px;
+  box-shadow: inset 0 0 0 2px #e5e5e5;*/
+  /*outline: 2px solid #e5e5e5;*/
   box-shadow: inset 0 0 0 2px #e5e5e5;
 }
 
 /*  ********  */
-
-.modal-search-form input:hover {
-  background-color: #ebebeb;
-}
-
-.modal-search-form input:focus {
-  background-color: #ffffff;
-  /*outline: 2px solid #e5e5e5;*/
-  border: 2px solid #e5e5e5;
-}
 
 .modal-search-form > button {
   width: 100%;

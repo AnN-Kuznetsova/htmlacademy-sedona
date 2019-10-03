@@ -9,7 +9,6 @@
 
 .hotel-item .container {
   display: flex;
-  /*align-items: center;*/
 
   padding: 30px 0;
 }
@@ -19,7 +18,7 @@
 }
 
 .hotel-photos-list {
-  max-width: 135px;
+  width: 135px;
   margin: 0;
   padding: 0;
 
@@ -35,8 +34,8 @@
 }
 
 .hotel-photo {
-  width: 135px;
-  height: 90px;
+  max-width: 135px;
+  height: auto;
 }
 
 .hotel-info {

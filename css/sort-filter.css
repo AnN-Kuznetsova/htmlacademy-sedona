@@ -111,44 +111,32 @@
 }
 
 .sort-type-radio + label {
-  display: block;
-
   width: 11px;
-  height: 11px;
+  height: 10px;
 
-  background-image: url("../img/spritesheet.png");
-  background-repeat: no-repeat;
+  font-size: 0;
 }
 
-.up-dir + label {
-  background-position: -10px -447px;
+.sort-type-radio + label polygon,
+.sort-type-radio + label polyline {
+  fill: #cacaca;
 }
 
-.up-dir:hover + label,
-.up-dir:focus + label {
-  background-position: -10px -417px;
+.sort-type-radio + label:hover polygon,
+.sort-type-radio:focus + label polygon,
+.sort-type-radio + label:hover polyline,
+.sort-type-radio:focus + label polyline {
+  fill: #231f20;
 }
 
-.up-dir:active + label,
-.up-dir:checked + label {
-  background-position: -10px -387px;
+.sort-type-radio:active + label polygon,
+.sort-type-radio:checked + label polygon,
+.sort-type-radio:active + label polyline,
+.sort-type-radio:checked + label polyline {
+  fill: #81b3d2;
 }
 
-.down-dir + label {
-  background-position: -10px -357px;
-}
-
-.down-dir:hover + label,
-.down-dir:focus + label {
-  background-position: -10px -327px;
-}
-
-.down-dir:active + label,
-.down-dir:checked + label {
-  background-position: -10px -297px;
-}
-
-.sort-type-radio:focus + label {
+.sort-type-radio:focus + label svg {
   border-radius: 2px;
   box-shadow:
     0 0 0 3px #ffffff,

@@ -10,10 +10,11 @@
 
   height: 507px;
 
-  background-color: #687781;
+  background-color: #afcadc;
   background-image:
     url("../img/polygon.svg"),
-    url("../img/photo-background.jpg");
+    url("../img/photo-background.jpg"),
+    linear-gradient(#e3f0f8 30%, #886e65);
   background-position:
     center bottom,
     center top;
@@ -23,6 +24,8 @@
 }
 
 .welcome img {
+  width: 459px;
+  height: 353px;
   margin: auto;
 }
 
@@ -35,6 +38,4 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-
-  /*background-color: rgba(0, 255,  0, 0.1);*/
 }

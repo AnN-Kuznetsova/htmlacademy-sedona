@@ -80,6 +80,7 @@
 }
 
 .social-btn {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,6 +91,17 @@
   margin-bottom: 6px;
 
   outline: none;
+}
+
+.social-btn::after {
+  position: absolute;
+  content: "";
+  z-index: 10;
+  top: 0;
+  left: 0;
+
+  width: 46px;
+  height: 48px;
 }
 
 .social-btn:active img {
@@ -124,10 +136,24 @@
 }
 
 .copyright-logo  {
+  position: relative;
+  width: 115px;
+  height: 41px;;
   margin-left: 9px;
-  margin-top: 6px;
+  /*margin-top: 6px;*/
 
   outline: none;
+}
+
+.copyright-logo::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 115px;
+  height: 41px;
 }
 
 .copyright-logo  path,

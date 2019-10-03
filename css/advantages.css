@@ -75,6 +75,7 @@
 .advantages-photo {
   display: flex;
   width: 1200px;
+  height: auto;
 
   background-color: #81b3d2;
 }
@@ -91,6 +92,8 @@
 .advantages-photo img {
   width: 800px;
   height: 256px;
+
+  background-color: #afcadc;
 }
 
 .advantages-photo p {

@@ -6,9 +6,13 @@
   font: inherit;
   color: #ffffff;
 
-  background-color: #687781;
-  background-image: url("../img/photo-background-filter.jpg");
-  background-position: center -57px;
+  background-color: #5a87b0;
+  background-image:
+    url("../img/photo-background-filter.jpg"),
+    linear-gradient(to right, #5a87b0 , #675551);
+  background-position:
+    center -57px,
+    0 0;
   background-repeat: no-repeat;
 }
 
