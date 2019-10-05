@@ -9,7 +9,7 @@
   align-items: baseline;
 
   padding-top: 29px;
-  padding-bottom: 31px;
+  padding-bottom: 26px;
 }
 
 .sort-filter p {
@@ -111,10 +111,23 @@
 }
 
 .sort-type-radio + label {
+  position: relative;
+
   width: 11px;
   height: 10px;
 
   font-size: 0;
+}
+
+.sort-type-radio + label::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 11px;
+  height: 10px;
 }
 
 .sort-type-radio + label polygon,

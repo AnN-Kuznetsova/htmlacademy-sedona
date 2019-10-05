@@ -38,9 +38,7 @@
   align-items: center;
 
   min-height: 57px;
-  margin: 0;
-  margin-top: -77px;
-  margin-bottom: 16px;
+  margin: -77px 0 16px 0;
   padding: 0;
 
   list-style: none;

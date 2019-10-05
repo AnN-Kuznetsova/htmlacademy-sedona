@@ -1,10 +1,7 @@
 /*   Причины  */
 
 .advantages h2 {
-  margin: 0;
-  margin-top: 29px;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin: 29px 40px 0 40px;
 
   font-size: 14px;
   line-height: 26px;
@@ -37,9 +34,7 @@
 
 .advantages-list-item h3 {
   width: 156px;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 
   font-size: 21px;
   line-height: 21px;
@@ -49,9 +44,7 @@
 
 .advantages-list-item  p {
   width: 280px;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .advantages-item {
@@ -69,7 +62,7 @@
 }
 
 .advantages-item p:nth-of-type(2) {
-  margin-top: 21px;
+  margin-top: 22px;
 }
 
 .advantages-photo {
@@ -134,13 +127,13 @@
 .feature-house {
   background-image: url("../img/icon-house.svg");
   background-size: 75px 72px;
-  background-position: center 59px;
+  background-position: center 60px;
 }
 
 .feature-food {
   background-image: url("../img/icon-food.svg");
   background-size: 74px 70px;
-  background-position: center 61px;
+  background-position: center 62px;
 }
 
 .feature-present {

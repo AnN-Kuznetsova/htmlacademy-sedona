@@ -7,10 +7,7 @@
 }
 
 .hotel-search h2 {
-  margin: 0;
-  margin-top: 51px;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin: 51px 40px 0 40px;
 
   font-size: 30px;
   line-height: 36px;
@@ -18,10 +15,7 @@
 }
 
 .hotel-search p {
-  margin: 0;
-  margin-top: 25px;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin: 25px 40px 0 40px;
 
   font-size: 14px;
   line-height: 24px;
@@ -29,10 +23,10 @@
 }
 
 .button-show-modal {
-  margin-top: 46px;
+  margin-top: 45px;
   margin-left: auto;
   margin-right: auto;
-  padding: 30px 139px;
+  padding: 30px 139px 31px;
 
   font-size: 21px;
   line-height: 26px;
@@ -91,6 +85,34 @@
   border: none;
   outline: none;
 }
+
+/*  placeholder  */
+
+.search-form-item input::-webkit-input-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.search-form-item input::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.search-form-item input:-ms-input-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.search-form-item input::-ms-input-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.search-form-item input::placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
 
 .search-form-item input:hover {
   background-color: #ebebeb;
@@ -214,10 +236,6 @@
 .minus:focus,
 .plus:focus,
 .calendar:focus {
-  /*width: 34px;
-  height: 34px;
-  box-shadow: inset 0 0 0 2px #e5e5e5;*/
-  /*outline: 2px solid #e5e5e5;*/
   box-shadow: inset 0 0 0 2px #e5e5e5;
 }
 
