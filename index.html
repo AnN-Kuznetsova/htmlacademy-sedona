@@ -113,7 +113,8 @@
           <form class="modal-search-form" action="https://echo.htmlacademy.ru" method="get">
             <p class="search-form-item">
               <label for="arrival-date">Дата заезда:</label>
-              <input id="arrival-date" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+              <input id="arrival-date" type="text" name="arrival-date" value="" placeholder="24 апреля 2017"
+                pattern="[0-9]{1,2} [А-Яа-я]{3,9} [0-9]{4}" title="24 апреля 2017">
               <button class="calendar" type="button">
                 <span class="visually-hidden">Открыть календарь</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" focusable="false">
@@ -124,7 +125,8 @@
             </p>
             <p class="search-form-item">
               <label for="date-of-departure">Дата выезда:</label>
-              <input id="date-of-departure" type="text" name="date-of-departure" value="" placeholder="4 июля 2017">
+              <input id="date-of-departure" type="text" name="date-of-departure" value="" placeholder="4 июля 2017"
+                pattern="[0-9]{1,2} [А-Яа-я]{3,9} [0-9]{4}" title="4 июля 2017">
               <button class="calendar" type="button">
                 <span class="visually-hidden">Открыть календарь</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22" focusable="false">
@@ -139,7 +141,7 @@
                 <button class="minus" type="button">
                   <span class="visually-hidden">Уменьшить число взрослых</span>
                 </button>
-                <input id="adults-count" type="text" name="adults-count" value="" placeholder="2">
+                <input id="adults-count" type="text" name="adults-count" value="" placeholder="2" pattern="[1-9]{1,}" title="2">
                 <button class="plus" type="button">
                   <span class="visually-hidden">Увеличить число взрослых</span>
                 </button>
@@ -151,7 +153,7 @@
                 <button class="minus" type="button">
                   <span class="visually-hidden">Уменьшить число детей</span>
                 </button>
-                <input id="children-count" type="text" name="children-count" value="" placeholder="0">
+                <input id="children-count" type="text" name="children-count" value="" placeholder="0"  pattern="[0-9]{1,}" title="0">
                 <button class="plus" type="button">
                   <span class="visually-hidden">Увеличить число детей</span>
                 </button>
