@@ -72,12 +72,15 @@
   background-color:  #ffffff;
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
 
-  transition: transform 0.3s;
-  /* -webkit-transition: -webkit-transform 0.3s ease-in-out;transition: -webkit-transform 0.3s ease-in-out;-o-transition: transform 0.3s ease-in-out;transition: transform 0.3s ease-in-out;transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; */
+  -webkit-transition: all 0.3s;
+       -o-transition: all 0.3s;
+          transition: all 0.3s;
 }
 
 .modal-search-hide {
-  transform: translateY(-101%);
+  -webkit-transform: translateY(-101%);
+      -ms-transform: translateY(-101%);
+          transform: translateY(-101%);
 }
 
 .modal-search-hide input,
@@ -86,7 +89,8 @@
 }
 
 .modal-search-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .modal-search-form {
