@@ -32,15 +32,23 @@ if (storageChildrenCount) {
 buttonShowModal.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalSearch.classList.toggle("modal-search-hide");
-  arrivalDateInput.focus();
+  if (modalSearch.classList.contains("modal-search-hide")) {
+    modalSearch.classList.remove("modal-search-error");
+  } else {
+    arrivalDateInput.focus();
+  }
 });
 
 modalSearchForm.addEventListener("submit", function (evt) {
   if (!arrivalDateInput.value || !departureDateInput.value || !adultsCountInput.value || !childrenCountInput.value) {
     evt.preventDefault();
-    console.log("Нужно что-то ввести");
+    /*console.log("Нужно что-то ввести");*/
+    modalSearch.classList.remove("modal-search-error");
+    modalSearch.offsetWidth = modalSearch.offsetWidth;
+    modalSearch.classList.add("modal-search-error");
   } else {
     if (isStorageSupport) {
+      modalSearch.classList.remove("modal-search-error");
       localStorage.setItem("adultsCount", adultsCountInput.value);
       localStorage.setItem("childrenCount", childrenCountInput.value);
     }
@@ -52,6 +60,7 @@ window.addEventListener("keydown", function (evt) {
     evt.preventDefault();
     if (!modalSearch.classList.contains("modal-search-hide")) {
       modalSearch.classList.add("modal-search-hide");
+      modalSearch.classList.remove("modal-search-error");
     }
   }
 });

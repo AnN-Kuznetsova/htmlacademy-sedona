@@ -41,8 +41,26 @@
 
 /*  Окно поиска гостиницы  */
 
-.modal-search-hide {
-  transform: translateY(-101%);
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 .modal-search {
@@ -56,6 +74,19 @@
 
   transition: transform 0.3s;
   /* -webkit-transition: -webkit-transform 0.3s ease-in-out;transition: -webkit-transform 0.3s ease-in-out;-o-transition: transform 0.3s ease-in-out;transition: transform 0.3s ease-in-out;transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; */
+}
+
+.modal-search-hide {
+  transform: translateY(-101%);
+}
+
+.modal-search-hide input,
+.modal-search-hide button {
+  display: none;
+}
+
+.modal-search-error {
+  animation: shake 0.6s;
 }
 
 .modal-search-form {
