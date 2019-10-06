@@ -126,12 +126,13 @@ input[type="radio"]:disabled + label {
 .button-blue:hover,
 .button-blue:focus {
   background-color: #669ec0;
+  outline: none;
 }
 
 .button-blue:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
-  border: none;
+  outline: none;
 }
 
 .button-brown {
@@ -141,11 +142,13 @@ input[type="radio"]:disabled + label {
 .button-brown:hover,
 .button-brown:focus {
   background-color: #604e43;
+  outline: none;
 }
 
 .button-brown:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
+  outline: none;
 }
 
 

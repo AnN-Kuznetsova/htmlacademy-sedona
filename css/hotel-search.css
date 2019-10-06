@@ -100,6 +100,12 @@
   width: 458px;
 }
 
+.modal-search-form button:hover,
+.modal-search-form button:focus,
+.modal-search-form button:active {
+  outline: none;
+}
+
 .modal-search-form .search-form-item {
   display: flex;
   justify-content: space-between;
