@@ -31,7 +31,7 @@ if (storageChildrenCount) {
 
 buttonShowModal.addEventListener("click", function (evt) {
   evt.preventDefault();
-  modalSearch.classList.toggle("modal-hide");
+  modalSearch.classList.toggle("modal-search-hide");
   arrivalDateInput.focus();
 });
 
@@ -50,8 +50,8 @@ modalSearchForm.addEventListener("submit", function (evt) {
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (!modalSearch.classList.contains("modal-hide")) {
-      modalSearch.classList.add("modal-hide");
+    if (!modalSearch.classList.contains("modal-search-hide")) {
+      modalSearch.classList.add("modal-search-hide");
     }
   }
 });
