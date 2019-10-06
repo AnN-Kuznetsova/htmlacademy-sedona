@@ -36,7 +36,6 @@
 /*  Окно поиска гостиницы  */
 
 .modal-search {
-  display: block;
   position: absolute;
   left: calc(50% - 568px / 2);
   padding: 55px;
