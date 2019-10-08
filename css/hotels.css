@@ -91,6 +91,7 @@
 .buttons-block .button {
   margin-top: 14px;
   margin-right: 6px;
+  max-width: 370px;
 }
 
 .hotel-category {

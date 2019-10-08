@@ -1,6 +1,8 @@
 /*  Поиск гостиницы  */
 
 .hotel-search-wrapper {
+  margin: 0 40px;
+
   background-color: #ffffff;
 }
 
@@ -12,7 +14,7 @@
 }
 
 .hotel-search h2 {
-  margin: 0 40px;
+  margin: 0;
   padding-top: 51px;
 
   font-size: 30px;
@@ -21,7 +23,7 @@
 }
 
 .hotel-search p {
-  margin: 25px 40px 0 40px;
+  margin: 25px 0 0;
 
   font-size: 14px;
   line-height: 24px;
