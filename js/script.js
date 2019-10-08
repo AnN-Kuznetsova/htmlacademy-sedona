@@ -14,6 +14,8 @@ var isStorageSupport = true;
 var storageAdultsCount = "";
 var storageChildrenCount = "";
 
+modalSearch.classList.add("modal-search-hide");
+
 try {
   storageAdultsCount = localStorage.getItem("adultsCount");
   storageChildrenCount = localStorage.getItem("childrenCount");
