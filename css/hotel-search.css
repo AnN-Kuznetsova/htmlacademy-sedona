@@ -188,7 +188,7 @@
   width: 179px;
 }
 
-.number-of-people {
+.people-amount {
   display: flex;
 
   margin: 0;
@@ -197,7 +197,7 @@
   background-color: #f2f2f2;
 }
 
-.number-of-people input {
+.people-amount input {
   width: 36px;
   padding-right: 4px;
   padding-left: 4px;
@@ -207,9 +207,9 @@
 
 /*  Плюс / Минус / Календарь */
 
-.minus,
-.plus,
-.calendar {
+.button-minus,
+.button-plus,
+.button-calendar {
   display: inline-block;
   vertical-align: middle;
 
@@ -224,23 +224,23 @@
   cursor: pointer;
 }
 
-.calendar svg {
+.button-calendar svg {
   vertical-align: middle;
   text-align: center;
 }
 
-.calendar path {
+.button-calendar path {
   fill: #a9a9a9;
 }
 
-.minus,
-.plus {
+.button-minus,
+.button-plus {
   position: relative;
 }
 
-.minus::before,
-.plus::before,
-.plus::after {
+.button-minus::before,
+.button-plus::before,
+.button-plus::after {
   position: absolute;
   content: "";
   left: 50%;
@@ -255,42 +255,42 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
-.minus::before,
-.plus::before {
+.button-minus::before,
+.button-plus::before {
   transform: translateX(-50%) translateY(-50%);
 }
 
-.plus::after {
+.button-plus::after {
   transform: translateX(-50%) translateY(-50%) rotate(90deg);
 }
 
-.calendar:hover path,
-.calendar:focus path {
+.button-calendar:hover path,
+.button-calendar:focus path {
   fill: #000000;
 }
 
-.minus:hover::before,
-.minus:focus::before,
-.plus:hover::before,
-.plus:hover::after,
-.plus:focus::before,
-.plus:focus::after {
+.button-minus:hover::before,
+.button-minus:focus::before,
+.button-plus:hover::before,
+.button-plus:hover::after,
+.button-plus:focus::before,
+.button-plus:focus::after {
   background-color: #000000;
 }
 
-.calendar:active path {
+.button-calendar:active path {
   fill: #81b3d2;
 }
 
-.minus:active::before,
-.plus:active::before,
-.plus:active::after {
+.button-minus:active::before,
+.button-plus:active::before,
+.button-plus:active::after {
   background-color: #81b3d2;
 }
 
-.minus:focus,
-.plus:focus,
-.calendar:focus {
+.button-minus:focus,
+.button-plus:focus,
+.button-calendar:focus {
   box-shadow: inset 0 0 0 2px #e5e5e5;
 }
 

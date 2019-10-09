@@ -93,6 +93,10 @@
   outline: none;
 }
 
+.social-btn path {
+  fill: #ffffff;
+}
+
 .social-btn::after {
   position: absolute;
   content: "";
@@ -104,7 +108,7 @@
   height: 48px;
 }
 
-.social-btn:active img {
+.social-btn:active svg {
   opacity: 0.3;
 }
 
@@ -140,7 +144,6 @@
   width: 115px;
   height: 41px;;
   margin-left: 9px;
-  /*margin-top: 6px;*/
 
   outline: none;
 }
