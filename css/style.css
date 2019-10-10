@@ -577,27 +577,27 @@ input[type="radio"]:disabled + label {
 
 .search-form-item input::-webkit-input-placeholder {
   color: #000000;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .search-form-item input::-moz-placeholder {
   color: #000000;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .search-form-item input:-ms-input-placeholder {
   color: #000000;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .search-form-item input::-ms-input-placeholder {
   color: #000000;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .search-form-item input::placeholder {
   color: #000000;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 
@@ -608,6 +608,10 @@ input[type="radio"]:disabled + label {
 .search-form-item input:focus {
   background-color: #ffffff;
   box-shadow: inset 0 0 0 2px #e5e5e5;
+}
+
+.search-form-item input:invalid {
+  box-shadow: inset red 0 0 0 1px;
 }
 
 .search-form-item.number-item {
@@ -950,9 +954,11 @@ fieldset.filter-price {
 }
 
 .filter-input-checkbox + label::before {
+  display: block;
   position: absolute;
   content: "";
   left: -40px;
+  top: -1px;
 
   width: 26px;
   height: 23px;

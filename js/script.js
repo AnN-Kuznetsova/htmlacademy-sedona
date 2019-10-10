@@ -14,6 +14,10 @@ var isStorageSupport = true;
 var storageAdultsCount = "";
 var storageChildrenCount = "";
 
+var focusInput = function() {
+  arrivalDateInput.focus();
+}
+
 modalSearch.classList.add("modal-search-hide");
 
 try {
@@ -37,7 +41,7 @@ buttonShowModal.addEventListener("click", function (evt) {
   if (modalSearch.classList.contains("modal-search-hide")) {
     modalSearch.classList.remove("modal-search-error");
   } else {
-    arrivalDateInput.focus();
+    setTimeout(focusInput, 300);
   }
 });
 
